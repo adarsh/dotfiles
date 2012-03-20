@@ -1,4 +1,4 @@
-thoughtbot dotfiles
+Adarsh's dotfiles
 ===================
 
 Flow:
@@ -6,7 +6,7 @@ Flow:
 * Fork this repo.
 * Clone your fork.
 * Install.
-* Track thoughtbot/dotfiles.
+* Track dotfiles.
 * Customize in master.
 * Update.
 
@@ -20,12 +20,12 @@ From your cloned directory:
 This will create symlinks for all config files in your home directory. You can
 safely run this file multiple times to update.
 
-Track thoughtbot/dotfiles
+Track adarshpandit/dotfiles
 -------------------------
 
 One time:
 
-    git remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git remote add upstream git@github.com:adarshpandit/dotfiles.git
     git fetch upstream
     git checkout -b upstream upstream/master
 
