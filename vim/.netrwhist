@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/training/dev/consoom/features/users'
+let g:netrw_dirhist_2='/Users/training/dev/consoom/features'
+let g:netrw_dirhist_3='/Users/training/dev/consoom/features/support'
+let g:netrw_dirhist_4='/Users/training/dev/consoom'
+let g:netrw_dirhist_5='/Users/training/dev/consoom/features'
+let g:netrw_dirhist_6='/Users/training/dev/consoom'
+let g:netrw_dirhist_7='/Users/training/dev/consoom/features'

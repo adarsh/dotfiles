@@ -1,3 +1,6 @@
+" Initiates pathogen
+call pathogen#infect()
+
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
 set nowritebackup
@@ -80,3 +83,13 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" Puts a red vertical line at 81 chars
+set colorcolumn=81
+
+" Adds config for rubytest.vim plugin
+let g:rubytest_cmd_test = "ruby -I test %p"
+let g:rubytest_cmd_testcase = "ruby -I test %p -n '/%c/'"
+" let g:rubytest_cmd_spec = "spec -f specdoc %p"
+" let g:rubytest_cmd_example = "spec -f specdoc %p -e '%c'"
+" let g:rubytest_cmd_feature = "cucumber %p"
+" let g:rubytest_cmd_story = "cucumber %p -n '%c'"

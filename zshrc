@@ -52,3 +52,6 @@ export EYRC=./.eyrc
 # automatically pushd
 setopt auto_pushd
 export dirstacksize=5
+
+# RVM
+[[ -s '/Users/training/.rvm/scripts/rvm' ]] && source '/Users/training/.rvm/scripts/rvm'

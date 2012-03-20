@@ -1,6 +1,7 @@
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
+alias bake="bundle exec rake"
 alias g="git"
 alias s="bundle exec rspec"
 alias cuc="bundle exec cucumber"
@@ -13,8 +14,31 @@ alias be="bundle exec"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
+alias t="ruby -I test"
+# Sets correct terminal emulation for TMUX
+alias tmux="TERM=xterm-256color tmux"
 
 alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
+alias ll="ls -alh"
+alias l="ll"
+alias c="clear"
+alias s="cd .."
+
+# Heroku staging
+alias staging='heroku run console --remote staging'
+alias staging-process='watch heroku ps --remote staging'
+alias staging-releases='heroku releases --remote staging'
+alias staging-tail='heroku logs --tail --remote staging'
+
+# Heroku production
+alias production='heroku console --remote production'
+alias production-process='watch heroku ps --remote production'
+alias production-releases='heroku releases --remote production'
+alias production-tail='heroku logs --tail --remote production'
+
+# Heroku databases
+alias db-pull-staging='heroku db:pull --remote staging --confirm `basename $PWD`-staging'
+alias db-pull-production='heroku db:pull --remote production --confirm `basename $PWD`-production'
