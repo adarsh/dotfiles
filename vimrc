@@ -93,3 +93,9 @@ let g:rubytest_cmd_testcase = "ruby -I test %p -n '/%c/'"
 " let g:rubytest_cmd_example = "spec -f specdoc %p -e '%c'"
 " let g:rubytest_cmd_feature = "cucumber %p"
 " let g:rubytest_cmd_story = "cucumber %p -n '%c'"
+
+" keeps buffers open
+set hidden
+
+" change the mapleader from \ to ,
+let mapleader=","
