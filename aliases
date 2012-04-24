@@ -1,31 +1,51 @@
+# Routing
+alias rr='rake routes'
+alias rrg='rake routes | grep'
+
+# Migrations
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
-alias bake="bundle exec rake"
-alias g="git"
-alias s="bundle exec rspec"
-alias cuc="bundle exec cucumber"
-alias gi="gem install"
-alias giv="gem install -v"
-alias gci="git pull --rebase && rake && git push"
-alias tlf="tail -f"
+
+# Bundler
 alias b="bundle"
 alias be="bundle exec"
+alias bake="bundle exec rake"
+
+# git
+alias g="git"
+alias gci="git pull --rebase && rake && git push"
+alias gs="git status"
+alias gsh="git show"
+alias gcm="git commit -m"
+alias gd="git diff"
+
+# Testing
+alias s="clear && bundle exec rspec"
+alias cuc="clear && bundle exec cucumber"
+alias t="clear && ruby -I test"
+
+alias gi="gem install"
+alias giv="gem install -v"
+
+# Command line utils
+alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
-alias t="ruby -I test"
-# Sets correct terminal emulation for TMUX
-alias tmux="TERM=xterm-256color tmux"
-
 alias -g G='| grep'
 alias -g M='| less'
-alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
 alias ll="ls -alh"
 alias l="ll"
 alias c="clear"
 alias s="cd .."
+
+# Sets correct terminal emulation for TMUX
+alias tmux="TERM=xterm-256color tmux"
+
+# Misc
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
 
 # Heroku staging
 alias staging='heroku run console --remote staging'

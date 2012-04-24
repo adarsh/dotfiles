@@ -51,6 +51,10 @@ if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor
 endif
 
+" Page through Ack results with Ctrl-N/P
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
+
 " Color scheme
 colorscheme vividchalk
 highlight NonText guibg=#060606
@@ -83,19 +87,33 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-" Puts a red vertical line at 81 chars
+" Puts a gray vertical line at 81 chars
 set colorcolumn=81
+highlight ColorColumn ctermbg=7
+
+" Highlights current line
+highlight CursorLine guibg=#181818
+
+" Changes line number colors
+highlight LineNr term=underline cterm=bold ctermfg=DarkGray
 
 " Adds config for rubytest.vim plugin
 let g:rubytest_cmd_test = "ruby -I test %p"
 let g:rubytest_cmd_testcase = "ruby -I test %p -n '/%c/'"
-" let g:rubytest_cmd_spec = "spec -f specdoc %p"
-" let g:rubytest_cmd_example = "spec -f specdoc %p -e '%c'"
-" let g:rubytest_cmd_feature = "cucumber %p"
-" let g:rubytest_cmd_story = "cucumber %p -n '%c'"
+let g:rubytest_cmd_spec = "spec -f specdoc %p"
+let g:rubytest_cmd_example = "spec -f specdoc %p -e '%c'"
+let g:rubytest_cmd_feature = "cucumber %p"
+let g:rubytest_cmd_story = "cucumber %p -n '%c'"
 
 " keeps buffers open
 set hidden
 
 " change the mapleader from \ to ,
 let mapleader=","
+
+" For copy/pasting in tmux
+set clipboard=unnamed
+
+" Opens new panes to right/bottom, which is more natural
+set splitbelow
+set splitright
