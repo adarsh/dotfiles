@@ -1,15 +1,12 @@
-" Initiates pathogen
-call pathogen#infect()
-
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
 set nowritebackup
 set history=50
-set ruler         " show the cursor position all the time
-set showcmd       " display incomplete commands
+" set ruler         " show the cursor position all the time
+" set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
-
+ 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -27,11 +24,13 @@ augroup vimrcEx
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \   exe "normal g`\"" |
+        \ endif
 augroup END
+
+" Initiates pathogen
+call pathogen#infect()
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -58,7 +57,6 @@ map <C-p> :cp<CR>
 " Color scheme
 colorscheme vividchalk
 highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
 set number
@@ -85,7 +83,7 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 " Treat <li> and <p> tags like the block tags they are
-let g:html_indent_tags = 'li\|p'
+let g:html_indent_tags = 'li\\\\|p'
 
 " Puts a gray vertical line at 81 chars
 set colorcolumn=81
@@ -108,7 +106,7 @@ let g:rubytest_cmd_story = "cucumber %p -n '%c'"
 " keeps buffers open
 set hidden
 
-" change the mapleader from \ to ,
+" change the mapleader from \\\\ to ,
 let mapleader=","
 
 " For copy/pasting in tmux

@@ -1,9 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/training/Dropbox/Coding/dev/lightsup/lightsup'
-let g:netrw_dirhist_2='/Users/training/Dropbox/Coding/dev/lightsup/lightsup/features'
-let g:netrw_dirhist_3='/Users/training/Dropbox/Coding/dev/lightsup/lightsup'
-let g:netrw_dirhist_4='/Users/training/Dropbox/Coding/dev/lightsup/lightsup/spec'
-let g:netrw_dirhist_5='/Users/training/Dropbox/Coding/dev/lightsup/lightsup/spec/controllers'
-let g:netrw_dirhist_6='/Users/training/Dropbox/Coding/dev/bacsignal'
-let g:netrw_dirhist_7='/Users/training/Dropbox/Coding/dev/bacsignal/features'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/training/Dropbox/Coding/dev/trail-map'
+let g:netrw_dirhist_2='/Users/training/Dropbox/Coding/dev/trail-map/trails'

@@ -3,49 +3,53 @@ alias rr='rake routes'
 alias rrg='rake routes | grep'
 
 # Migrations
-alias migrate="rake db:migrate db:test:prepare"
-alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
-alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
+alias migrate='rake db:migrate db:test:prepare'
+alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
+alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
 
 # Bundler
-alias b="bundle"
-alias be="bundle exec"
-alias bake="bundle exec rake"
+alias b='bundle'
+alias be='bundle exec'
+alias bake='bundle exec rake'
 
 # git
-alias g="git"
-alias gci="git pull --rebase && rake && git push"
-alias gs="git status"
-alias gsh="git show"
-alias gcm="git commit -m"
-alias gd="git diff"
+alias g='git'
+alias ga='git add .'
+alias gci='git pull --rebase && rake && git push'
+alias gs='git status'
+alias gsh='git show'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gca='git commit -a'
+alias gd='clear && git diff'
+alias gdc='git diff --cached'
 
 # Testing
-alias s="clear && bundle exec rspec"
-alias cuc="clear && bundle exec cucumber"
-alias t="clear && ruby -I test"
+alias s='clear && bundle exec rspec'
+alias cuc='clear && bundle exec cucumber'
+alias t='clear && ruby -I test'
 
-alias gi="gem install"
-alias giv="gem install -v"
+alias gi='gem install'
+alias giv='gem install -v'
 
 # Command line utils
-alias tlf="tail -f"
+alias tlf='tail -f'
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
 alias -g G='| grep'
 alias -g M='| less'
-alias ll="ls -alh"
-alias l="ll"
-alias c="clear"
-alias s="cd .."
+alias ll='ls -alh'
+alias l='ll'
+alias c='clear'
+alias s='cd ..'
 
 # Sets correct terminal emulation for TMUX
-alias tmux="TERM=xterm-256color tmux"
+alias tmux='TERM=xterm-256color tmux'
 
 # Misc
 alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
+alias -g ONE='| awk '{ print \$1}''
 
 # Heroku staging
 alias staging='heroku run console --remote staging'
