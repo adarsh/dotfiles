@@ -1,3 +1,9 @@
+# Specific to white macbook
+# Set the correct VIM (For white macbook)
+alias vim="~/Applications/MacVim.app/Contents/MacOS/Vim"
+# Override for SSL checking
+alias curl='curl -k'
+
 # Routing
 alias rr='rake routes'
 alias rrg='rake routes | grep'
@@ -43,6 +49,8 @@ alias ll='ls -alh'
 alias l='ll'
 alias c='clear'
 alias s='cd ..'
+alias du='du -hs * | gsort -hr'
+alias df='df -h'
 
 # Sets correct terminal emulation for TMUX
 alias tmux='TERM=xterm-256color tmux'

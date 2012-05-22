@@ -53,5 +53,8 @@ export EYRC=./.eyrc
 setopt auto_pushd
 export dirstacksize=5
 
-# RVM
-[[ -s '/Users/training/.rvm/scripts/rvm' ]] && source '/Users/training/.rvm/scripts/rvm'
+# recommended by brew doctor
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin'
+
+# for rbenv
+eval "$(rbenv init -)"

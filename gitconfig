@@ -1,0 +1,12 @@
+[push]
+  default = tracking
+
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+
+[user]
+  name = Adarsh Pandit
+  email = adarshpandit@gmail.com
+
+[color]
+  ui = true
