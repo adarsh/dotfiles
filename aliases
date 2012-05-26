@@ -1,9 +1,3 @@
-# Specific to white macbook
-# Set the correct VIM (For white macbook)
-alias vim="~/Applications/MacVim.app/Contents/MacOS/Vim"
-# Override for SSL checking
-alias curl='curl -k'
-
 # Routing
 alias rr='rake routes'
 alias rrg='rake routes | grep'
