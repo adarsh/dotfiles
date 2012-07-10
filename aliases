@@ -16,13 +16,16 @@ alias bake='bundle exec rake'
 alias g='git'
 alias ga='git add .'
 alias gci='git pull --rebase && rake && git push'
+alias gl='git log'
 alias gs='git status'
 alias gsh='git show'
+alias gd='clear && git diff'
+alias gdc='git diff --cached'
+
+alias gc='git commit'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gca='git commit -a'
-alias gd='clear && git diff'
-alias gdc='git diff --cached'
 
 # Testing
 alias s='clear && bundle exec rspec'

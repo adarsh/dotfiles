@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/training/Dropbox/Coding/dev/trail-map'
-let g:netrw_dirhist_2='/Users/training/Dropbox/Coding/dev/trail-map/trails'
-let g:netrw_dirhist_3='/Users/Adarsh/Dropbox/Coding/dev/learning/koans/koans'
-let g:netrw_dirhist_4='/Users/Adarsh/.dotfiles'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/adarsh/Dropbox/coding/dev/learning/koans/koans'
+let g:netrw_dirhist_2='/Users/adarsh/Dropbox/coding/dev/yammer/sched.do/spec/acceptance'
+let g:netrw_dirhist_3='/Users/adarsh/Dropbox/coding/dev/yammer/sched.do/app/views/welcome'
