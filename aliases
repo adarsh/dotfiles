@@ -1,5 +1,8 @@
+# Yammer
+alias deploy-staging='git push staging && heroku run rake db:migrate --app scheddo-staging'
+alias deploy-prod='git push production && heroku run rake db:migrate --app scheddo-prod'
 # Servers
-alias fs='foreman start -p 3000'
+alias fs='clear && foreman start -p 3000'
 alias rs='rails server'
 
 # Routing
