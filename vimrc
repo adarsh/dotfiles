@@ -40,6 +40,9 @@ set expandtab
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
+" Remove trailing whitespace
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+
 " Local config
 " if filereadable(".vimrc.local")
 "   source .vimrc.local
@@ -115,3 +118,14 @@ set clipboard=unnamed
 " Opens new panes to right/bottom, which is more natural
 set splitbelow
 set splitright
+
+" Buffer navigation more naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Git
+nnoremap <Leader>gc :Gcommit -m ""<LEFT>
+nnoremap <Leader>gcv :Gcommit -v<CR>
+nnoremap <Leader>ga :Git add .<CR>
