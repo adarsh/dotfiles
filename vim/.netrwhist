@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/adarsh/Dropbox/Coding/dev/thoughtbot.github.com'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/adarsh/Dropbox/Coding/dev/rainmaker'
+let g:netrw_dirhist_2='/Users/adarsh/Dropbox/Coding/dev/rainmaker/spec/support/fake_api_specs'
+let g:netrw_dirhist_3='/Users/adarsh/Dropbox/Coding/dev/rainmaker/spec/support'
+let g:netrw_dirhist_4='/Users/adarsh/Dropbox/Coding/dev/rainmaker/spec/api_specs'
+let g:netrw_dirhist_5='/Users/adarsh/Dropbox/Coding/dev/yammer/sched.do/db/migrate'
