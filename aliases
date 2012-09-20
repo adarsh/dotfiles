@@ -1,6 +1,8 @@
 # Yammer
 alias deploy-staging='git push staging && heroku run rake db:migrate --app scheddo-staging'
 alias deploy-production='git push production && heroku run rake db:migrate --app scheddo-prod'
+alias yam='cd ~/dev/yammer/sched.do/'
+
 # Servers
 alias fs='clear && foreman start -p 3000'
 alias rs='rails server'
@@ -18,17 +20,19 @@ alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
 alias b='bundle'
 alias be='bundle exec'
 alias bake='bundle exec rake'
-alias bmr='bundle && migrate && rake'
+alias bmr='bundle && migrate && time rake'
 
 # git
 alias g='git'
 alias ga='git add .'
-alias gc='git checkout'
+alias gb='git branch'
 alias gcb='git checkout -b'
 alias gci='git pull --rebase && rake && git push'
+alias gco='git checkout'
 alias gd='clear && git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
+alias gp='git push'
 alias gs='git status'
 alias gsh='git show'
 
@@ -36,6 +40,8 @@ alias gc='git commit -v'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gca='git commit -a'
+
+alias prune='git remote prune origin'
 
 # Testing
 alias s='clear && bundle exec rspec'
@@ -60,7 +66,7 @@ alias du='du -hs * | gsort -hr'
 alias df='df -h'
 
 # Sets correct terminal emulation for TMUX
-alias tmux='TERM=xterm-256color tmux'
+alias tmux="TERM=screen-256color-bce tmux"
 
 # Misc
 alias -g L='| wc -l'

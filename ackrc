@@ -6,3 +6,5 @@
 --ignore-dir=tmp
 --ignore-dir=coverage
 --ignore-dir=tags
+--type-set=CTAGS=tags
+--noCTAGS

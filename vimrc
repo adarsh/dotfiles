@@ -129,3 +129,6 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <Leader>gc :Gcommit -m ""<LEFT>
 nnoremap <Leader>gcv :Gcommit -v<CR>
 nnoremap <Leader>ga :Git add .<CR>
+
+" Open Mou for Markdown files
+map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>

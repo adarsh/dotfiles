@@ -1,5 +1,5 @@
 [push]
-  default = tracking
+  default = current
 
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
@@ -19,5 +19,8 @@
   up = !git fetch origin && git rebase origin/master
   down = !git checkout master && git merge @{-1} --ff-only
   ir = !git rebase -i origin/master
+
 [credential]
 	helper = osxkeychain
+[core]
+	ignorecase = true
