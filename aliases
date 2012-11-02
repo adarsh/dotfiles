@@ -1,6 +1,6 @@
 # Yammer
-alias deploy-staging='git push staging && heroku run rake db:migrate --app scheddo-staging'
-alias deploy-production='git push production && heroku run rake db:migrate --app scheddo-prod'
+alias yam-deploy-staging='git push staging && heroku run rake db:migrate --app scheddo-staging'
+alias yam-deploy-production='git push production && heroku run rake db:migrate --app scheddo-prod'
 alias yam='cd ~/dev/yammer/sched.do/'
 
 # Servers

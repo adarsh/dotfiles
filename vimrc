@@ -132,3 +132,8 @@ nnoremap <Leader>ga :Git add .<CR>
 
 " Open Mou for Markdown files
 map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>
+
+" Tab completion
+set wildmode=list:longest,list:full
+set complete=.,w,t
+imap <Tab> <C-P>

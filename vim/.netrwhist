@@ -1,4 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/adarsh/Dropbox/Coding/dev/yammer/sched.do/spec/acceptance'
-let g:netrw_dirhist_2='/Users/adarsh/Dropbox/Coding/dev/yammer/sched.do/spec/acceptance/step_definitions'
+let g:netrw_dirhist_cnt =0
