@@ -1,4 +1,22 @@
 set nocompatible  " Use Vim settings, rather then Vi settings
+filetype off      " Required for Vundle setup
+
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle (required!)
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-fugitive'
+Bundle 'jgdavey/vim-turbux'
+Bundle 'jgdavey/tslime.vim'
+Bundle 'tpope/vim-markdown'
+Bundle 'mileszs/ack.vim'
+
+" End Vundle Setup
+filetype plugin indent on
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -13,8 +31,6 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-filetype plugin indent on
-
 augroup vimrcEx
   au!
 
@@ -28,9 +44,6 @@ augroup vimrcEx
         \   exe "normal g`\"" |
         \ endif
 augroup END
-
-" Initiates pathogen
-call pathogen#infect()
 
 " Softtabs, 2 spaces
 set tabstop=2
