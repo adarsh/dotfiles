@@ -13,6 +13,8 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-ruby/vim-ruby'
 
 " End Vundle Setup
 filetype plugin indent on
@@ -146,7 +148,7 @@ nnoremap <Leader>ga :Git add .<CR>
 " Open Mou for Markdown files
 map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>
 
-" Tab completion
-set wildmode=list:longest,list:full
-set complete=.,w,t
-imap <Tab> <C-P>
+" CtrlP for fuzzy finding
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*tags*,*.swp
