@@ -35,6 +35,7 @@ alias gl='git log'
 alias gp='git push'
 alias gs='git status'
 alias gsh='git show'
+alias gu='git up'
 
 alias gc='git commit -v'
 alias gcm='git commit -m'
