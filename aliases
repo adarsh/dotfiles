@@ -2,6 +2,7 @@
 alias yam-deploy-staging='git push staging && heroku run rake db:migrate --app scheddo-staging'
 alias yam-deploy-production='git push production && heroku run rake db:migrate --app scheddo-prod'
 alias yam='cd ~/dev/yammer/sched.do/'
+alias yamux='teamocil --here yammer'
 
 # Servers
 alias fs='clear && foreman start -p 3000'
