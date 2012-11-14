@@ -11,7 +11,6 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
-Bundle 'tpope/vim-markdown'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-ruby/vim-ruby'
@@ -47,6 +46,11 @@ augroup vimrcEx
         \ endif
 augroup END
 
+" Tab completion options
+set completeopt=longest,menu
+set complete=.,w,b,u,t
+set wildmode=longest,list:longest
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
@@ -68,10 +72,6 @@ if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor
 endif
 
-" Page through Ack results with Ctrl-N/P
-map <C-n> :cn<CR>
-map <C-p> :cp<CR>
-
 " Color scheme
 colorscheme vividchalk
 highlight NonText guibg=#060606
@@ -82,10 +82,6 @@ set numberwidth=5
 
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
-
-" Tab completion options
-set wildmode=list:longest,list:full
-set complete=.,w,t
 
 " Tags
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
@@ -152,3 +148,6 @@ map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*tags*,*.swp
+
+" Format Markdown by reminding Vim that Markdown files end in .md
+au BufRead,BufNewFile *.md set filetype=markdown
