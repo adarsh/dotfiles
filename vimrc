@@ -151,3 +151,6 @@ set wildignore+=*/tmp/*,*tags*,*.swp
 
 " Format Markdown by reminding Vim that Markdown files end in .md
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Syntax highlight JSON files by convincing Vim it's JavaScript
+autocmd BufNewFile,BufRead *.json set ft=javascript
