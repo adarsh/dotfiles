@@ -12,13 +12,13 @@
   ui = true
 
 [alias]
-  c = commit -m
   a = add
   aa= !git add -u && git add . && git status
+  c = commit -m
   cob = checkout -b
-  up = !git fetch origin && git rebase origin/master
   down = !git checkout master && git merge @{-1} --ff-only
-  ir = !git rebase -i origin/master
+  squash = !git rebase -i origin/master
+  up = !git fetch origin && git rebase origin/master
 
 [credential]
 	helper = osxkeychain
