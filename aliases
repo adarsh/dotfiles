@@ -47,9 +47,6 @@ alias s='clear && bundle exec rspec'
 alias cuc='clear && bundle exec cucumber'
 alias t='clear && ruby -I test'
 
-alias gi='gem install'
-alias giv='gem install -v'
-
 # Command line utils
 alias -g G='| grep'
 alias -g M='| less'
