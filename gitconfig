@@ -24,3 +24,4 @@
 	helper = osxkeychain
 [core]
 	ignorecase = true
+	excludesfile = /Users/adarsh/.gitignore_global
