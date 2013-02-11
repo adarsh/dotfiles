@@ -5,15 +5,15 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 
 [user]
-	name = Adarsh Pandit
-	email = adarsh@thoughtbot.com
+  name = Adarsh Pandit
+  email = adarsh@thoughtbot.com
 
 [color]
-  ui = true
+ ui = auto
 
 [alias]
   a = add
-  aa= !git add -u && git add . && git status
+  aa = add --all
   c = commit -m
   cob = checkout -b
   down = !git checkout master && git merge @{-1} --ff-only
@@ -22,6 +22,11 @@
 
 [credential]
 	helper = osxkeychain
+
 [core]
 	ignorecase = true
 	excludesfile = /Users/adarsh/.gitignore_global
+  whitespace = trailing-space,space-before-tab
+
+[apply]
+	whitespace = warn

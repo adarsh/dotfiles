@@ -7,12 +7,13 @@ call vundle#rc()
 
 " let Vundle manage Vundle (required!)
 Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
-Bundle 'mileszs/ack.vim'
+Bundle 'jgdavey/vim-turbux'
 Bundle 'kien/ctrlp.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby'
 
 " End Vundle Setup

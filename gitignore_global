@@ -1,3 +1,6 @@
 # For zeus
 zeus.json
 custom_plan.rb
+
+# for chruby
+.ruby-version

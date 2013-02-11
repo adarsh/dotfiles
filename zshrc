@@ -53,9 +53,19 @@ export EYRC=./.eyrc
 setopt auto_pushd
 export dirstacksize=5
 
+# Source the chruby shell script
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+# source /usr/local/opt/chruby/share/chruby/auto.sh
+
 # recommended by brew doctor
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/texbin'
 
 # Enable zmv, alias to 'mmv' to allow matching like `mmv *.mp3 *.old.mp3`
 autoload -U zmv
 alias mmv='noglob zmv -W'
+
+#RVM
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#Fanhattan
+export RACK_ENV=development

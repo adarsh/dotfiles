@@ -97,3 +97,6 @@ alias db-pull-production='heroku db:pull --remote production --confirm `basename
 # Yammer
 alias yam='cd ~/dev/yammer/sched.do/'
 alias yamux='teamocil --here yammer'
+
+# Fanhattan
+alias fan='cd ~/dev/fanhattan/'
