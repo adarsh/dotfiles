@@ -30,3 +30,5 @@
 
 [apply]
 	whitespace = warn
+[pull]
+	rebase = true
