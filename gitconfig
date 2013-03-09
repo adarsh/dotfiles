@@ -1,6 +1,9 @@
 [push]
   default = current
 
+[pull]
+  rebase = true
+
 [merge]
   ff = only
 
@@ -25,16 +28,13 @@
   squash = !git rebase -i origin/master
   up = !git fetch origin && git rebase -i origin/master
 
-
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
 [core]
-	ignorecase = true
-	excludesfile = /Users/adarsh/.gitignore_global
+  ignorecase = true
+  excludesfile = /Users/adarsh/.gitignore_global
   whitespace = trailing-space,space-before-tab
 
 [apply]
-	whitespace = warn
-[pull]
-	rebase = true
+  whitespace = warn
