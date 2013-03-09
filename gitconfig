@@ -15,7 +15,9 @@
   email = adarsh@thoughtbot.com
 
 [color]
- ui = auto
+  branch = auto
+  diff = auto
+  status = auto
 
 [alias]
   a = add
