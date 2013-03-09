@@ -62,3 +62,6 @@ alias mmv='noglob zmv -W'
 
 #Fanhattan
 export RACK_ENV=development
+
+#rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

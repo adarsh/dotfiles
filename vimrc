@@ -47,21 +47,21 @@ augroup vimrcEx
         \ endif
 augroup END
 
-" Tab completion options
-set completeopt=longest,menu
-set complete=.,w,b,u,t
-set wildmode=longest,list:longest
-
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Tab completion options
+set completeopt=longest,menu
+set complete=.,w,b,u,t
+set wildmode=longest,list:longest
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
 " Remove trailing whitespace
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
 " Local config
 " if filereadable(".vimrc.local")
