@@ -43,11 +43,6 @@ alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
-# Testing
-alias s='clear && bundle exec rspec'
-alias cuc='clear && bundle exec cucumber'
-alias t='clear && ruby -I test'
-
 # Command line utils
 alias -g G='| grep'
 alias -g M='| less'
@@ -65,12 +60,17 @@ alias s='cd ..'
 alias tlf='tail -f'
 
 # Sets correct terminal emulation for TMUX
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux='TERM=screen-256color-bce tmux'
+alias tmn='tmux new -s'
+alias tma='tmux attach -t'
 
 # Misc
 alias -g L='| wc -l'
 alias -g ONE='| awk '{ print \$1}''
 alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
+
+# rsync is better than cp
+alias rsync='rsync -avz --progress --partial'
 
 # Heroku console
 alias staging='heroku run console --remote staging'
@@ -100,5 +100,5 @@ alias db-pull-production='heroku db:pull --remote production --confirm `basename
 alias yam='cd ~/dev/yammer/sched.do/'
 alias yamux='teamocil --here yammer'
 
-# Fanhattan
-alias fan='cd ~/dev/fanhattan/'
+# Current project
+alias gift='cd ~/dev/gift-of-knowledge'

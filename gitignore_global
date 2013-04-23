@@ -2,5 +2,5 @@
 zeus.json
 custom_plan.rb
 
-# for chruby
+# For rbenv
 .ruby-version

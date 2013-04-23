@@ -24,3 +24,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init -)"

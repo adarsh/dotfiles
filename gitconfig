@@ -26,7 +26,7 @@
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
   down = !git checkout master && git merge @{-1} --ff-only
   squash = !git rebase -i origin/master
-  up = !git fetch origin && git rebase -i origin/master
+  up = !git fetch origin && git rebase origin/master
 
 [credential]
   helper = osxkeychain

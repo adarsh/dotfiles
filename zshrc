@@ -54,14 +54,12 @@ setopt auto_pushd
 export dirstacksize=5
 
 # recommended by brew doctor
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/texbin'
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/texbin:~/bin'
 
 # Enable zmv, alias to 'mmv' to allow matching like `mmv *.mp3 *.old.mp3`
 autoload -U zmv
 alias mmv='noglob zmv -W'
 
-#Fanhattan
-export RACK_ENV=development
-
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="./bin/stubs:$PATH"
