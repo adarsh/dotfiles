@@ -187,6 +187,9 @@ autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 " Scroll while keeping 10 lines at the file borders
 set scrolloff=10
 
+" Save when hitting capital 'W'
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+
 " Open Mou for Markdown files
 map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>
 
