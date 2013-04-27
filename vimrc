@@ -190,8 +190,13 @@ set scrolloff=10
 " Save when hitting capital 'W'
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
-" Open Mou for Markdown files
-map <leader>md :silent !open -a Mou %<cr>:redraw!<cr>
+" Formatting
+" Change Ruby 1.8 > 1.9 hash syntax
+nnoremap <Leader>: :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
+
+" Add whitespace inside of braces
+nnoremap <Leader>{ :%s/{\([^ ]\)/{ \1/gc<CR>
+nnoremap <Leader>} :%s/\([^ ]\)}/\1 }/gc<CR>
 
 " CtrlP for fuzzy finding
 let g:ctrlp_map = '<c-p>'
