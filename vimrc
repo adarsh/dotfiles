@@ -134,8 +134,9 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-" Markdown files end in .md
+" Markdown files end in .md (and occasionally .markdown)
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.markdown set filetype=markdown
 
 " Enable spellchecking for Markdown
 au BufRead,BufNewFile *.md setlocal spell
