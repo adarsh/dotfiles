@@ -1,6 +1,6 @@
-# For zeus
-zeus.json
-custom_plan.rb
-
 # For rbenv
 .ruby-version
+
+# for Ruby
+bin/
+.bundle/
