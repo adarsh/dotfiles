@@ -34,7 +34,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'rking/ag.vim.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
-Bundle 'mhinz/vim-signify.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
@@ -123,9 +122,6 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
 autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
-
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
@@ -166,11 +162,14 @@ set clipboard=unnamed
 set splitbelow
 set splitright
 
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
 " Open splits faster
-nmap <leader>s<left>   :leftabove  vnew<CR>
-nmap <leader>s<right>  :rightbelow vnew<CR>
-nmap <leader>s<up>     :leftabove  new<CR>
-nmap <leader>s<down>   :rightbelow new<CR>
+nmap <leader>v :vs<CR>
+nmap <leader>h :sp<CR>
+nmap <leader>V :AV<CR>
+nmap <leader>H :AS<CR>
 
 " Buffer navigation more naturally
 nnoremap <C-J> <C-W><C-J>
