@@ -102,3 +102,6 @@ alias yamux='teamocil --here yammer'
 
 # Current project
 alias gift='cd ~/dev/gift-of-knowledge'
+
+# Railsconf
+alias talk='cd dev/conferences/railsconf_intro_track'

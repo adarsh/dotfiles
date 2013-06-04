@@ -166,10 +166,14 @@ set splitright
 nnoremap <leader><leader> <c-^>
 
 " Open splits faster
-nmap <leader>v :vs<CR>
-nmap <leader>h :sp<CR>
-nmap <leader>V :AV<CR>
-nmap <leader>H :AS<CR>
+nmap <leader>V :vs<CR>
+nmap <leader>S :sp<CR>
+
+" Open specs faster
+nmap <leader>v :AV<CR>
+nmap <leader>s :AS<CR>
+nmap <leader>a :A<CR>
+
 
 " Buffer navigation more naturally
 nnoremap <C-J> <C-W><C-J>
