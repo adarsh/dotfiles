@@ -37,19 +37,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
-
-" Consider these from thoughtbot dotfiles
-" Bundle 'nanki/treetop.vim'
-" Bundle 'timcharper/textile.vim'
-" Bundle 'tpope/vim-cucumber'
-" Bundle 'tpope/vim-endwise'
-" Bundle 'tpope/vim-haml'
-" Bundle 'tpope/vim-surround'
-" Bundle 'tsaleh/vim-matchit'
-" Bundle 'vim-scripts/ctags.vim'
-" Bundle 'vim-scripts/greplace.vim'
-" Bundle 'vim-scripts/tComment'
-" Bundle 'xenoterracide/html.vim'
+Bundle 'terryma/vim-multiple-cursors'
 
 " End Vundle Setup
 filetype plugin indent on
@@ -162,29 +150,13 @@ set clipboard=unnamed
 set splitbelow
 set splitright
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
-
-" Open splits faster
-nmap <leader>V :vs<CR>
-nmap <leader>S :sp<CR>
-
-" Open specs faster
-nmap <leader>v :AV<CR>
-nmap <leader>s :AS<CR>
-nmap <leader>a :A<CR>
-
+source $HOME/.vim/leader_keys.vim
 
 " Buffer navigation more naturally
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Git
-nnoremap <Leader>gc :Gcommit -m ""<LEFT>
-nnoremap <Leader>gcv :Gcommit -v<CR>
-nnoremap <Leader>ga :Git add .<CR>
 
 " Always start on first line of commit message
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
@@ -203,13 +175,7 @@ nnoremap <Leader>: :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
 nnoremap <Leader>{ :%s/{\([^ ]\)/{ \1/gc<CR>
 nnoremap <Leader>} :%s/\([^ ]\)}/\1 }/gc<CR>
 
-" CtrlP for fuzzy finding
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*/tmp/*,*tags*,*.swp
-
-" Run 'rake' from Vim using Turbux/Tslime methods
-nnoremap <Leader>r :call Send_to_Tmux("clear && rake\n")<CR>
+source $HOME/.vim/ctrlp.vim
 
 " Remove trailing whitespace
 nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
@@ -217,6 +183,9 @@ nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 " Puts a gray vertical line at 81 chars
 set colorcolumn=81
 highlight ColorColumn ctermbg=7
+
+" Highlight all search matches
+set hls
 
 " Changes line number colors
 highlight LineNr term=underline cterm=bold ctermfg=DarkGray

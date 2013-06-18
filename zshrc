@@ -61,5 +61,5 @@ autoload -U zmv
 alias mmv='noglob zmv -W'
 
 #rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 export PATH="./bin/stubs:$PATH"

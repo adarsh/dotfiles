@@ -101,7 +101,7 @@ alias yam='cd ~/dev/yammer/sched.do/'
 alias yamux='teamocil --here yammer'
 
 # Current project
-alias gift='cd ~/dev/gift-of-knowledge'
+alias cc='cd ~/dev/cc/contacts-core'
 
-# Railsconf
-alias talk='cd dev/conferences/railsconf_intro_track'
+# Quick terminal notifications via https://github.com/alloy/terminal-notifier
+alias notify='terminal-notifier -message'
