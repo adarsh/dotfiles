@@ -1,8 +1,17 @@
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" Run a quick 'git diff'
+nnoremap <Leader>d :call Send_to_Tmux("gd\n")<CR>
+
+" Factories File
+map <Leader>f :e spec/support/factories.rb<CR>
+
 " Run 'rake' from Vim using Turbux/Tslime methods
 nnoremap <Leader>k :call Send_to_Tmux("clear && rake && notify 'rake complete'\n")<CR>
 
-" Switch between the last two files
-nnoremap <leader><leader> <c-^>
+" Create a work-in-progress commit
+nnoremap <Leader>w :call Send_to_Tmux("gaa && gcm 'wip' &&")<CR>
 
 " Rotate open buffers
 nnoremap <leader>r <C-W><C-R>
@@ -19,10 +28,22 @@ nmap <leader>a :A<CR>
 " Save faster
 nmap <leader>w :w<CR>
 
-" Clear highlighting
+" Clear match highlighting
 nmap <leader>c :noh<CR>
+
+" Close a pane
+nmap <leader>q :q<CR>
 
 " Git
 nnoremap <Leader>gc :Gcommit -m ""<LEFT>
 nnoremap <Leader>gcv :Gcommit -v<CR>
 nnoremap <Leader>ga :Git add .<CR>
+
+" Create a WIP commit
+map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
+
+" Refresh CtrlP cache and enter search mode
+map <Leader>cp :CtrlPClearCache<CR><C-P>
+
+" Paste in paste mode
+map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>

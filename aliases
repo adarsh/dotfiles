@@ -102,6 +102,7 @@ alias yamux='teamocil --here yammer'
 
 # Current project
 alias cc='cd ~/dev/cc/contacts-core'
+alias rakecc="rspec && notify 'rake complete!'"
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'

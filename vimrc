@@ -27,17 +27,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles
+Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'kchmck/vim-coffee-script.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'rking/ag.vim.git'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'terryma/vim-multiple-cursors'
 
 " End Vundle Setup
 filetype plugin indent on
