@@ -11,7 +11,7 @@ map <Leader>f :e spec/support/factories.rb<CR>
 nnoremap <Leader>k :call Send_to_Tmux("clear && rake && notify 'rake complete'\n")<CR>
 
 " Create a work-in-progress commit
-nnoremap <Leader>w :call Send_to_Tmux("gaa && gcm 'wip' &&")<CR>
+nnoremap <Leader>w :call Send_to_Tmux("gaa && gcm 'wip' && git push")<CR>
 
 " Rotate open buffers
 nnoremap <leader>r <C-W><C-R>
