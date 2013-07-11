@@ -39,9 +39,6 @@ nnoremap <Leader>gc :Gcommit -m ""<LEFT>
 nnoremap <Leader>gcv :Gcommit -v<CR>
 nnoremap <Leader>ga :Git add .<CR>
 
-" Create a WIP commit
-map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
-
 " Refresh CtrlP cache and enter search mode
 map <Leader>cp :CtrlPClearCache<CR><C-P>
 
