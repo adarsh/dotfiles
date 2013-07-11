@@ -57,7 +57,11 @@ alias ll='ls -alh'
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias s='cd ..'
+
+# Tail logs
 alias tlf='tail -f'
+alias tld="tail -f log/development.log"
+alias tlt="tail -f log/test.log"
 
 # Sets correct terminal emulation for TMUX
 alias tmux='TERM=screen-256color-bce tmux'
