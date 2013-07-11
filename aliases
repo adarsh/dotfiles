@@ -63,8 +63,7 @@ alias tlf='tail -f'
 alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 
-# Sets correct terminal emulation for TMUX
-alias tmux='TERM=screen-256color-bce tmux'
+# Tmux
 alias tmn='tmux new -s'
 alias tma='tmux attach -t'
 
