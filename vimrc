@@ -185,8 +185,5 @@ nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 set colorcolumn=81
 highlight ColorColumn ctermbg=7
 
-" Highlight all search matches
-set hls
-
 " Changes line number colors
 highlight LineNr term=underline cterm=bold ctermfg=DarkGray

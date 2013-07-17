@@ -12,7 +12,7 @@ alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump 
 alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
 
 # Bundler
-alias b='bundle'
+alias b='(bundle install --local || bundle install)'
 alias be='bundle exec'
 alias bake='bundle exec rake'
 alias bmr='bundle && migrate && time rake'
@@ -76,8 +76,8 @@ alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10
 alias rsync='rsync -avz --progress --partial'
 
 # Heroku console
-alias staging='heroku run console --remote staging'
-alias production='heroku run console --remote production'
+alias staging-console='heroku run console --remote staging'
+alias production-console='heroku run console --remote production'
 
 # Heroku Deploy
 alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging'
@@ -109,3 +109,7 @@ alias notify='terminal-notifier -message'
 # Current project
 alias cc='cd ~/dev/cc/contacts-core'
 alias rakecc="rake config:initialize && rspec && notify 'rake complete!'"
+
+# Ruby versions
+alias mri='rbenv use 1.9.3-p429'
+alias jrb='rbenv use jruby-1.7.2'

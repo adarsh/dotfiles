@@ -28,9 +28,6 @@ nmap <leader>a :A<CR>
 " Save faster
 nmap <leader>w :w<CR>
 
-" Clear match highlighting
-nmap <leader>c :noh<CR>
-
 " Close a pane
 nmap <leader>q :q<CR>
 
