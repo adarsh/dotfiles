@@ -16,6 +16,11 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
+# project aliases
+if [ -e "$HOME/.project_aliases" ]; then
+  source "$HOME/.project_aliases"
+fi
+
 # vi mode
 bindkey -v
 bindkey "^F" vi-cmd-mode

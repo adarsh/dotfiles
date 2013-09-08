@@ -117,10 +117,6 @@ alias yamux='teamocil --here yammer'
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
 
-# Current project
-alias cc='cd ~/dev/cc/contacts-core'
-alias rakecc="rake config:initialize && rspec && notify 'rake complete!'"
-
 # Ruby versions
 alias mri='rbenv use 1.9.3-p429'
 alias jrb='rbenv use jruby-1.7.2'
