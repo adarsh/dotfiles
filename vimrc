@@ -27,6 +27,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles
+Bundle 'adarsh/electric_boogaloo.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jgdavey/vim-turbux'
