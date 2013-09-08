@@ -1,6 +1,18 @@
-# For rbenv
-.ruby-version
-
 # for Ruby
-bin/
+bin/stubs
 .bundle/
+
+# scripts which re-run the most recently broken specs
+broked*
+
+# for team app
+spec/tmp*
+
+# Guardfiles
+Guardfile
+
+# Spring Gem
+.spring.rb
+
+# Mac leftovers
+# .DS_Store
