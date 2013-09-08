@@ -180,7 +180,7 @@ nnoremap <Leader>} :%s/\([^ ]\)}/\1 }/gc<CR>
 source $HOME/.vim/ctrlp.vim
 
 " Remove trailing whitespace
-nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+nnoremap <Leader>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
 " Puts a gray vertical line at 81 chars
 set colorcolumn=81
