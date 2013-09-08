@@ -63,3 +63,12 @@ alias mmv='noglob zmv -W'
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 export PATH="./bin/stubs:$PATH"
+
+function b {
+  if [[ $# == 0 ]]
+  then
+    bundle check || bundle install && bundle --binstubs=./bin/stubs
+  else
+    bundle "$@"
+  fi
+}
