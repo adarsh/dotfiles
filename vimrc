@@ -39,6 +39,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/greplace.vim'
 
 " End Vundle Setup
 filetype plugin indent on
