@@ -47,6 +47,13 @@ alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
+# hub
+alias hb='hub browse'
+
+# powder gem
+alias pl='powder link'
+alias po='powder open'
+
 # Command line utils
 alias -g G='| grep'
 alias -g M='| less'
