@@ -163,8 +163,8 @@ nnoremap <C-H> <C-W><C-H>
 " Always start on first line of commit message
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
-" Scroll while keeping 10 lines at the file borders
-set scrolloff=10
+" Scroll while keeping 5 lines at the file borders
+set scrolloff=5
 
 " Save when hitting capital 'W'
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
