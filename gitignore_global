@@ -12,7 +12,8 @@ spec/tmp*
 Guardfile
 
 # Spring Gem
-.spring.rb
+~/.spring.rb
+config/spring.rb
 
 # Mac leftovers
-# .DS_Store
+.DS_Store
