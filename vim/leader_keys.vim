@@ -5,7 +5,7 @@ nnoremap <leader><leader> <c-^>
 nnoremap <Leader>d :call Send_to_Tmux("gd\n")<CR>
 
 " Factories File
-map <Leader>f :e spec/support/factories.rb<CR>
+map <Leader>f :e spec/factories.rb<CR>
 
 " Run 'rake' from Vim using Turbux/Tslime methods
 nnoremap <Leader>k :call Send_to_Tmux("clear && rake && notify 'rake complete'\n")<CR>
