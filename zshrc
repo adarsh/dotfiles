@@ -72,7 +72,7 @@ export PATH="./bin/stubs:$PATH"
 function b {
   if [[ $# == 0 ]]
   then
-    bundle check || bundle install && bundle --binstubs=./bin/stubs
+    bundle check || bundle install -j8 && bundle --binstubs=./bin/stubs -j8
   else
     bundle "$@"
   fi
