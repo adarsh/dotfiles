@@ -5,8 +5,8 @@ let g:ctrlp_cmd = 'CtrlP'
 " Switch to the file if it's already open
 let g:ctrlp_switch_buffer = 'E'
 
-" Don't clear the cache on Vim exit
-let g:ctrlp_clear_cache_on_exit = 1
+" ag is fast enough that CtrlP doesn't need to cache
+let g:ctrlp_use_caching = 0
 
 " Store the cache in the /tmp/ctrlp dir
 let g:ctrlp_cache_dir = '/tmp/ctrlp'
