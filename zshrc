@@ -69,6 +69,7 @@ alias mmv='noglob zmv -W'
 if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 export PATH="./bin/stubs:$PATH"
 
+# Fancy bundler - checks for existing gems and installs in parallel
 function b {
   if [[ $# == 0 ]]
   then
@@ -77,3 +78,7 @@ function b {
     bundle "$@"
   fi
 }
+
+# Just type `cd <DIRECTORY_UNDER_ONE_OF_THESE_DIRS>` to go there, without
+# the full path. Autocomplete and everything! /ht @gabebw
+cdpath=($HOME/dev $HOME/dev/thoughtbot $HOME)
