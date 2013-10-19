@@ -180,3 +180,19 @@ highlight ColorColumn ctermbg=7
 
 " Changes line number colors
 highlight LineNr term=underline cterm=bold ctermfg=DarkGray
+
+" Close braces, parens, and brackets automatically
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
+
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [[     [
+inoremap []     []
