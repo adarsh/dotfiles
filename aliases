@@ -91,8 +91,8 @@ alias staging-console='heroku run console --remote staging'
 alias production-console='heroku run console --remote production'
 
 # Heroku Deploy
-alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging'
-alias deploy-production='git push production && heroku run rake db:migrate --remote staging'
+alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging && heroku restart --remote staging'
+alias deploy-production='git push production && heroku run rake db:migrate --remote production && heroku restart --remote production'
 
 # Heroku log tailing
 alias tail-staging='heroku logs --tail --remote staging'
