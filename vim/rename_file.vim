@@ -1,3 +1,4 @@
+command! -bang -nargs=* RenameFile call RenameFile(<f-args>)
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'), 'file')
@@ -7,5 +8,3 @@ function! RenameFile()
         redraw!
     endif
 endfunction
-
-map <leader>n :call RenameFile()<cr>

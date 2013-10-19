@@ -157,9 +157,6 @@ set splitright
 " Use separate leader keys file
 source $HOME/.vim/leader_keys.vim
 
-" Rename file using RenameFile (leader-n)
-source $HOME/.vim/rename_file.vim
-
 " Buffer navigation more naturally
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
