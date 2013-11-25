@@ -115,7 +115,7 @@ cnoreabbr <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 let &cpo=s:cpo_save
 unlet s:cpo_save
 set background=dark
-set backspace=2
+set backspace=indent,eol,start
 set complete=.,w,t
 set expandtab
 set fileencodings=ucs-bom,utf-8,default,latin1
