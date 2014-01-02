@@ -48,6 +48,8 @@ alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
+alias wip="git commit -a -m 'wip' && git push"
+
 # hub
 alias hb='hub browse'
 
