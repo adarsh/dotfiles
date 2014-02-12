@@ -49,7 +49,7 @@ nnoremap <Leader>ga :Git add .<CR>
 
 " TESTING
 " Run 'rake' from Vim using Turbux/Tslime methods
-nnoremap <Leader>k :call Send_to_Tmux("clear && rake && notify 'rake complete'\n")<CR>
+nnoremap <Leader>k :call Send_to_Tmux("clear && rake\n")<CR>
 
 
 " MISC
