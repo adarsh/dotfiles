@@ -8,11 +8,5 @@ let g:ctrlp_switch_buffer = 'E'
 " ag is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
-" Store the cache in the /tmp/ctrlp dir
-let g:ctrlp_cache_dir = '/tmp/ctrlp'
-
 " Make CtrlP use ag for listing the files. Much faster and respects .gitignore
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-" Ignore these files (not necessary as ag respects .gitignore)
-set wildignore+=*/tmp/*,*tags*,*.swp,*/.git/*,*/vendor/cache/*
