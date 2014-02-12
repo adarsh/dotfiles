@@ -168,9 +168,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Always start on first line of commit message
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
-
 " Scroll while keeping 5 lines at the file borders
 set scrolloff=5
 
