@@ -96,7 +96,3 @@ alias deploy-production='git push production && heroku run rake db:migrate --rem
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
-
-# Ruby versions
-alias mri='rbenv use 1.9.3-p429'
-alias jrb='rbenv use jruby-1.7.2'
