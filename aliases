@@ -90,33 +90,9 @@ alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10
 # rsync is better than cp
 alias rsync='rsync -avz --progress --partial'
 
-# Heroku console
-alias staging-console='heroku run console --remote staging'
-alias production-console='heroku run console --remote production'
-
 # Heroku Deploy
 alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging && heroku restart --remote staging'
 alias deploy-production='git push production && heroku run rake db:migrate --remote production && heroku restart --remote production'
-
-# Heroku log tailing
-alias tail-staging='heroku logs --tail --remote staging'
-alias tail-production='heroku logs --tail --remote production'
-
-# Heroku proceses
-alias process-staging='watch heroku ps --remote staging'
-alias process-production='watch heroku ps --remote production'
-
-# Heroku releases
-alias releases-staging='heroku releases --remote staging'
-alias releases-production='heroku releases --remote production'
-
-# Heroku databases
-alias db-pull-staging='heroku db:pull --remote staging --confirm `basename $PWD`-staging'
-alias db-pull-production='heroku db:pull --remote production --confirm `basename $PWD`-production'
-
-# Yammer
-alias yam='cd ~/dev/yammer/sched.do/'
-alias yamux='teamocil --here yammer'
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
