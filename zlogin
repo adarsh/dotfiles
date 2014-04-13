@@ -18,10 +18,3 @@ setopt prompt_subst
 
 # prompt
 export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%1d%{$reset_color%}] '
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# load thoughtbot/dotfiles scripts
-export PATH="$HOME/.bin:$PATH"
-eval "$(rbenv init -)"
