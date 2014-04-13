@@ -72,10 +72,6 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X1
 autoload -U zmv
 alias mmv='noglob zmv -W'
 
-#rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
-export PATH="./bin/stubs:$PATH"
-
 # Fancy bundler - checks for existing gems and installs in parallel
 function b {
   if [[ $# == 0 ]]
@@ -88,4 +84,14 @@ function b {
 
 # Just type `cd <DIRECTORY_UNDER_ONE_OF_THESE_DIRS>` to go there, without
 # the full path. Autocomplete and everything! /ht @gabebw
-cdpath=($HOME/dev $HOME/dev/thoughtbot $HOME)
+cdpath=($HOME $HOME/dev $HOME/dev/thoughtbot $HOME/dev/personal)
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# load thoughtbot/dotfiles scripts
+export PATH="$HOME/.bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
