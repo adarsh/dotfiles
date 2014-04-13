@@ -114,9 +114,6 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
-" Tags
-let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
-
 " Cucumber navigation commands
 autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
@@ -147,8 +144,6 @@ let g:rubytest_cmd_test = "ruby -I test %p"
 let g:rubytest_cmd_testcase = "ruby -I test %p -n '/%c/'"
 let g:rubytest_cmd_spec = "spec -f specdoc %p"
 let g:rubytest_cmd_example = "spec -f specdoc %p -e '%c'"
-let g:rubytest_cmd_feature = "cucumber %p"
-let g:rubytest_cmd_story = "cucumber %p -n '%c'"
 
 " keeps buffers open
 set hidden
@@ -174,9 +169,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " Scroll while keeping 5 lines at the file borders
 set scrolloff=5
-
-" Save when hitting capital 'W'
-cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
 " Use separate CtrlP file
 source $HOME/.vim/ctrlp.vim
