@@ -91,8 +91,8 @@ alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10
 alias rsync='rsync -avz --progress --partial'
 
 # Heroku Deploy
-alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging && heroku restart --remote staging'
-alias deploy-production='git push production && heroku run rake db:migrate --remote production && heroku restart --remote production'
+alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging && heroku restart --remote staging && staging open'
+alias deploy-production='git push production && heroku run rake db:migrate --remote production && heroku restart --remote production && production open'
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
