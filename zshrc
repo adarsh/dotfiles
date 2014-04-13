@@ -62,6 +62,9 @@ export EYRC=./.eyrc
 setopt auto_pushd
 export dirstacksize=5
 
+# set localhost for postgres
+export PGHOST=localhost
+
 # recommended by brew doctor
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/texbin:~/bin'
 
