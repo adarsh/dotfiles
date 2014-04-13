@@ -69,6 +69,8 @@ augroup END
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
+
+" Tabs are spaces
 set expandtab
 
 " Display extra whitespace
