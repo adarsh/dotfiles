@@ -58,3 +58,6 @@ map <Leader>cp :CtrlPClearCache<CR><C-P>
 
 " Paste in paste mode
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+
+" " Run commands such as `migrate` or `m` interactively
+nnoremap <Leader>i :RunInInteractiveShell<space>

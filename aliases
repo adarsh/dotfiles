@@ -53,17 +53,13 @@ alias wip="git commit -a -m 'wip' && git push"
 # hub
 alias hb='hub browse'
 
-# powder gem
-alias pl='powder link'
-alias po='powder open'
-
 # Command line utils
 alias -g G='| grep'
 alias -g M='| less'
 alias -g C='| pbcopy'
 alias ...='../..'
 alias ack='clear && ack'
-alias ag='clear && ag'
+alias ag='clear && ag -i'
 alias c='clear'
 alias df='df -h'
 alias du='du -hs * | gsort -hr'
@@ -75,12 +71,13 @@ alias s='cd ..'
 
 # Tail logs
 alias tlf='tail -f'
-alias tld="tail -f log/development.log"
-alias tlt="tail -f log/test.log"
+alias tld='tail -f log/development.log'
+alias tlt='tail -f log/test.log'
 
 # Tmux
 alias tmn='tmux new -s'
 alias tma='tmux attach -t'
+alias t='tmux attach-session -D || tmux new-session'
 
 # Misc
 alias -g L='| wc -l'
