@@ -92,6 +92,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi
+
+# mkdir .git/safe in the root of repositories you trust
+export PATH=".git/safe/../../bin:$PATH"
