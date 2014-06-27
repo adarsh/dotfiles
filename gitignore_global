@@ -1,5 +1,6 @@
 # for Ruby
-bin/stubs
+bin/
+bin/rspec
 .bundle/
 
 # scripts which re-run the most recently broken specs
