@@ -86,6 +86,12 @@ function b {
 # the full path. Autocomplete and everything! /ht @gabebw
 cdpath=($HOME $HOME/dev $HOME/dev/thoughtbot $HOME/dev/personal)
 
+# You can hit C-X to open your $EDITOR
+# with the command typed in the buffer
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^X' edit-command-line
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
