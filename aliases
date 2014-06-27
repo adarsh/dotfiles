@@ -68,6 +68,8 @@ alias ll='ls -alh'
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias s='cd ..'
+alias tr='tree -L 2'
+
 
 # Tail logs
 alias tlf='tail -f'
