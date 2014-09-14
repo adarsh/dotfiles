@@ -50,8 +50,11 @@ alias unstage='git reset HEAD'
 
 alias wip="git commit -a -m 'wip' && git push"
 
-# hub
-alias hb='hub browse'
+# github cli
+alias hb='gh browse'
+
+# middlman
+alias mm='middleman'
 
 # Command line utils
 alias -g G='| grep'
