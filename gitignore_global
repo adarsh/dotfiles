@@ -18,3 +18,6 @@ config/spring.rb
 
 # Mac leftovers
 .DS_Store
+
+# Rspec config
+.rspec
