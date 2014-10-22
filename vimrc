@@ -30,7 +30,6 @@ Bundle 'gmarik/vundle'
 " Define bundles
 Bundle 'adarsh/electric_boogaloo.vim'
 Bundle 'bling/vim-airline'
-Bundle 'christoomey/vim-run-interactive'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dockyard/vim-easydir'
 Bundle 'gcmt/wildfire.vim'
