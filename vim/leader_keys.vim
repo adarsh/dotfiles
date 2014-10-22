@@ -53,9 +53,6 @@ nnoremap <Leader>k :call Send_to_Tmux("clear && rake\n")<CR>
 
 
 " MISC
-" Refresh CtrlP cache and enter search mode
-map <Leader>cp :CtrlPClearCache<CR><C-P>
-
 " Paste in paste mode
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
