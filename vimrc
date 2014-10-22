@@ -1,3 +1,7 @@
+" Vundle plugin manager setup
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#rc()
+
 " Change the leader key from \ to space
 let mapleader=" "
 
@@ -19,10 +23,6 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 filetype off      " Required for Vundle setup
-
-" Vundle plugin manager setup
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
 " let Vundle manage Vundle (required!)
 Bundle 'gmarik/vundle'
