@@ -1,0 +1,55 @@
+[general]
+ui         = ttyui
+accounts   = thoughtbot
+pythonfile = ~/.mutt/offlineimaphelpers.py
+fsync      = False
+
+# Only read values, don't make any changes to the server
+readonly   = True
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/temp/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
+
+[Account thoughtbot]
+localrepository  = thoughtbot-local
+remoterepository = thoughtbot-remote
+status_backend   = sqlite
+postsynchook     = notmuch new
+
+[Repository thoughtbot-local]
+type = Maildir
+localfolders = ~/.mail/adarsh-thoughtbot.com
+nametrans = lambda folder: {
+                            'important': '[Gmail]/Important',
+                            'archive': '[Gmail]/All Mail',
+                            'drafts':  '[Gmail]/Drafts',
+                            'starred': '[Gmail]/Starred',
+                            'sent':    '[Gmail]/Sent Mail',
+                            'trash':   '[Gmail]/Trash',
+                            }.get(folder, folder)
+
+[Repository thoughtbot-remote]
+maxconnections = 1
+type = Gmail
+remoteuser = adarsh@thoughtbot.com
+remotepasseval = get_keychain_pass(account="adarsh@thoughtbot.com",
+                                   server ="imap.gmail.com")
+realdelete = no
+sslcacertfile = ~/.mutt/Equifax_Secure_CA.cert
+nametrans = lambda folder: {
+                            '[Gmail]/Important': 'important',
+                            '[Gmail]/All Mail':  'archive',
+                            '[Gmail]/Drafts':    'drafts',
+                            '[Gmail]/Sent Mail': 'sent',
+                            '[Gmail]/Starred':   'starred',
+                            '[Gmail]/Trash':     'trash',
+                            }.get(folder, folder)
+folderfilter = lambda folder: folder not in [
+                                             '[Gmail]/Spam',
+                                             '[Gmail]/Chats',
+                                             ]

@@ -44,17 +44,22 @@ alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gca='git commit -a'
 
+alias gq='git squash'
+
 alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
 alias wip="git commit -a -m 'wip' && git push"
 
-# github cli
+# GitHub
 alias hb='gh browse'
 
 # middlman
 alias mm='middleman'
+
+# Opening pages
+alias lh='open http://localhost:3000'
 
 # Command line utils
 alias -g G='| grep'

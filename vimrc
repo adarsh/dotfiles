@@ -28,6 +28,7 @@ filetype off      " Required for Vundle setup
 Bundle 'gmarik/vundle'
 
 " Define bundles
+Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'adarsh/electric_boogaloo.vim'
 Bundle 'bling/vim-airline'
 Bundle 'christoomey/vim-tmux-navigator'
@@ -38,6 +39,7 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'kchmck/vim-coffee-script.git'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
+Bundle 'pydave/itchy.vim'
 Bundle 'rking/ag.vim.git'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
