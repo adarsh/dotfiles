@@ -1,5 +1,5 @@
 " Vundle plugin manager setup
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " Change the leader key from \ to space
