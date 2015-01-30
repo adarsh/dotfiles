@@ -51,6 +51,10 @@ nnoremap <Leader>ga :Git add .<CR>
 " Run 'rake' from Vim using Turbux/Tslime methods
 nnoremap <Leader>k :call Send_to_Tmux("clear && rake\n")<CR>
 
+" Override vim-turbux leader keys
+let g:no_turbux_mappings = 1
+map <leader>t <Plug>SendTestToTmux
+map <leader>l <Plug>SendFocusedTestToTmux
 
 " MISC
 " Paste in paste mode
