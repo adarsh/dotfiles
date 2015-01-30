@@ -24,7 +24,7 @@
   c = commit -m
   cob = checkout -b
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
-  down = !git checkout master && git merge @{-1} --ff-only
+  down = !git checkout master && git merge @{-1} --ff-only && git push
   squash = !git rebase -i origin/master
   up = !git fetch origin && git rebase origin/master
 
