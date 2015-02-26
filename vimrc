@@ -10,7 +10,6 @@ set history=50
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set nobackup
-set nocompatible  " Use Vim settings, rather then Vi settings
 set noswapfile
 set nowritebackup
 set ruler         " show the cursor position all the time
