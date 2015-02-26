@@ -10,6 +10,7 @@ setopt auto_cd
 
 # use vim as an editor
 export EDITOR=vim
+export VISUAL=vim
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
