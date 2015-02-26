@@ -25,7 +25,7 @@
   cob = checkout -b
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
   down = !git checkout master && git merge @{-1} --ff-only && git push
-  pr = !git log -n 1 --pretty=format:'%s%n%n%b' | hub pull-request -F -
+  opr = !git log -n 1 --pretty=format:'%s%n%n%b' || hub pull-request -F -
   squash = !git rebase -i origin/master
   up = !git fetch origin && git rebase origin/master
 
