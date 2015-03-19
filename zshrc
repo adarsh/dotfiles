@@ -106,3 +106,8 @@ fi
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
+
+# Paths for Postgres.app binaries
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+
+unset RBENV_VERSION
