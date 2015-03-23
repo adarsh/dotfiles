@@ -6,7 +6,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_switch_buffer = 'E'
 
 " Make CtrlP use ag for listing the files. Much faster and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " ag is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
