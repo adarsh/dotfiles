@@ -27,6 +27,6 @@ windows:
       layout: 9f82,255x64,0,0{173x64,0,0,4,81x64,174,0,5}
       panes:
         - vim
-        - rake
+        - gcom && gu && bmr
   - server: foreman start
   - logs: tail -f log/development.log
