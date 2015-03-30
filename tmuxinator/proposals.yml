@@ -1,7 +1,8 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: proposals
-root: /Users/adarsh/dev/thoughtbot/proposals
+name: proposal
+root: /Users/adarsh/dev/proposals
+
 
 
 # Optional tmux socket
