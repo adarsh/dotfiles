@@ -41,7 +41,6 @@ Bundle 'rking/ag.vim.git'
 Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'slim-template/vim-slim'
-Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails.git'
@@ -114,9 +113,6 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
-
-" Cucumber navigation commands
-autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
