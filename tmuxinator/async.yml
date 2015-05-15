@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotcom.yml
 
 name: async
-root: /Users/adarsh/dev/personal/async_standup
+root: /Users/adarsh/dev/async_standup
 
 
 # Optional tmux socket
