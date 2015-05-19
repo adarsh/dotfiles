@@ -1,3 +1,6 @@
+" Don't show the splash screen on startup
+set shortmess+=I
+
 " Vundle plugin manager setup
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
