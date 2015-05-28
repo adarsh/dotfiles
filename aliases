@@ -86,7 +86,7 @@ alias tma='tmux attach -t'
 alias t='tmux new-session -As'
 
 # Homebrew
-alias brew_update_all='brew update && brew upgrade'
+alias brew_update_all='brew update && brew upgrade --all'
 
 # Misc
 alias -g L='| wc -l'
