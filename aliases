@@ -50,7 +50,7 @@ alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
-alias wip="git commit -a -m 'wip' && git push"
+alias wip="git commit -a -m 'wip [ci skip]' && git push"
 
 # github cli
 alias hb='gh browse'
