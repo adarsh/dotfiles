@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: ap_blog
-root: /Users/adarsh/dev/blog
+name: dotfiles
+root: /Users/adarsh/.dotfiles
 
 
 # Optional tmux socket
@@ -28,4 +28,3 @@ windows:
       panes:
         - vim
         - gcom && gu
-  - server: middleman

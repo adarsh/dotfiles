@@ -30,6 +30,7 @@ filetype off      " Required for Vundle setup
 Bundle 'gmarik/vundle'
 
 " Define bundles
+
 Bundle 'adarsh/electric_boogaloo.vim'
 Bundle 'bling/vim-airline'
 Bundle 'christoomey/vim-tmux-navigator'
