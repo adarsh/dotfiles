@@ -137,6 +137,9 @@ au BufRead,BufNewFile *.md setlocal spell
 " Automatically wrap at 80 characters for Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
+" Open all folds at start
+au BufRead * normal zR
+
 " Syntax highlight JSON files by convincing Vim it is JavaScript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
