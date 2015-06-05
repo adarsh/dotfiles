@@ -35,7 +35,7 @@ alias gdc='clear && git diff --cached'
 alias gdm='clear && git diff origin/master'
 alias gl='clear && git log'
 alias gp='git push'
-alias gq='git squash'
+alias gq='git rebase -i --autosquash'
 alias gs='git status'
 alias grc='git rebase --continue'
 alias gsh='git show'
@@ -50,7 +50,7 @@ alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
 
-alias wip="git commit -a -m 'wip [ci skip]' && git push"
+alias wip="git commit -m 'fixup! wip [ci skip]' && git push"
 
 # github cli
 alias hb='gh browse'
