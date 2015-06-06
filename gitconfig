@@ -4,6 +4,9 @@
 [pull]
   rebase = true
 
+[rebase]
+  autosquash = true
+
 [merge]
   ff = only
 
