@@ -52,6 +52,13 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/greplace.vim'
 
+" Plugins I am experimenting with
+" ReplaceWithRegister adds motion `gr{motion} to avoid first deleting
+Bundle 'vim-scripts/ReplaceWithRegister'
+
+" Queue of things to try:
+" https://github.com/vim-scripts/ReplaceWithSameIndentRegister
+
 " End Vundle Setup
 filetype plugin indent on
 
