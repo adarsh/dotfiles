@@ -1,0 +1,11 @@
+PreCommit:
+  RuboCop:
+    enabled: true
+    problem_on_unmodified_line: ignore
+    quiet: true
+    on_warn: fail
+CommitMsg:
+  ALL:
+    quiet: true
+  CapitalizedSubject:
+    enabled: false
