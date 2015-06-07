@@ -1,13 +1,8 @@
 # for Ruby
-bin/
-bin/rspec
 .bundle/
 
 # scripts which re-run the most recently broken specs
 broked*
-
-# for team app
-spec/tmp*
 
 # Guardfiles
 Guardfile
