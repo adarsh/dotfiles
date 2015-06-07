@@ -131,9 +131,6 @@ let g:html_indent_tags = 'li\|p'
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.markdown set filetype=markdown
 
-" Enable spellchecking for Markdown
-au BufRead,BufNewFile *.md setlocal spell
-
 " Automatically wrap at 80 characters for Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
