@@ -2,6 +2,9 @@
 " Change Ruby 1.8 > 1.9 hash syntax
 nnoremap <Leader>: :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
 
+" Change all double quotes to single
+nnoremap <Leader>" :%s/"/'/gc<CR>
+
 " Add whitespace inside of braces
 nnoremap <Leader>{ :%s/{\([^ ]\)/{ \1/gc<CR>
 nnoremap <Leader>} :%s/\([^ ]\)}/\1 }/gc<CR>
