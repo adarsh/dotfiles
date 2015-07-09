@@ -15,7 +15,7 @@ nnoremap <Leader>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:reta
 " Rename file using RenameFile (leader-n)
 source $HOME/.vim/rename_file.vim
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NAVIGATION
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
@@ -24,7 +24,7 @@ nnoremap <leader><leader> <c-^>
 map <Leader>f :e spec/factories.rb<CR>
 
 " Rotate open buffers
-nnoremap <leader>r <C-W><C-R>
+nnoremap <leader>r <C-W><C-R><C-W><C-W>
 
 " Open splits faster
 nmap <leader>V :vs<CR>
