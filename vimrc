@@ -99,7 +99,7 @@ if executable("ag")
 endif
 
 " Color scheme
-colorscheme molokai
+colorscheme zellner
 highlight NonText guibg=#060606
 
 " Numbers
