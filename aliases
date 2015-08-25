@@ -42,8 +42,6 @@ alias gsh='git show'
 alias gu='git remote prune origin && git up'
 
 alias gc='git commit -v'
-alias gcm='git commit -m'
-alias gcam='git commit -a -m'
 alias gca='git commit -a'
 
 alias prune='git remote prune origin'
@@ -52,8 +50,13 @@ alias unstage='git reset HEAD'
 
 alias wip="git commit -m 'fixup! wip [ci skip]' && git push"
 
-# github cli
-alias hb='gh browse'
+function gcm() {
+ git commit -m $1 && git push
+}
+
+function gcam() {
+ git commit -am $1 && git push
+}
 
 # middlman
 alias mm='middleman'
