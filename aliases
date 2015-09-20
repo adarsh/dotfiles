@@ -2,7 +2,7 @@
 alias v='vim'
 
 # Local servers
-alias fs='clear && foreman start -p 3000'
+alias fs='clear && forego start -p 3000'
 alias rs='rails server'
 alias rc='rails console'
 
