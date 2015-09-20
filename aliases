@@ -41,7 +41,6 @@ alias grc='git rebase --continue'
 alias gsh='git show'
 alias gu='git remote prune origin && git up'
 
-alias gc='git commit -v'
 alias gca='git commit -a'
 
 alias prune='git remote prune origin'
@@ -52,6 +51,10 @@ alias wip="git commit -m 'fixup! wip [ci skip]' && git push"
 
 function gcm() {
  git commit -m $1 && git push
+}
+
+function gc() {
+ git commit -v $1 && git push
 }
 
 function gcam() {
