@@ -30,7 +30,7 @@ filetype off      " Required for Vundle setup
 Bundle 'gmarik/vundle'
 
 " Define bundles
-
+Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'adarsh/electric_boogaloo.vim'
 Bundle 'bling/vim-airline'
 Bundle 'christoomey/vim-tmux-navigator'
@@ -190,3 +190,6 @@ highlight LineNr term=underline cterm=bold ctermfg=DarkGray
 
 " Use 'Rolodex' mode with vsplits, making them all expand
 set winheight=999
+
+" Config for SplitJoin
+let g:splitjoin_ruby_curly_braces = 0

@@ -11,4 +11,4 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " ag is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
-" Ignore some directories by adding them to ~/.agignore
+" Ignore directories by adding them to ~/.agignore
