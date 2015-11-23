@@ -1,11 +1,99 @@
 PreCommit:
+  ALL:
+    quiet: true
+
+  BundleCheck:
+    enabled: true
+    description: 'Checking Gemfile dependencies'
+    required_executable: 'bundle'
+    flags: ['check']
+    install_command: 'gem install bundler'
+    include:
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '*.gemspec'
+
+  CoffeeLint:
+    enabled: true
+    description: 'Analyzing with coffeelint'
+    required_executable: 'coffeelint'
+    flags: ['--reporter=csv']
+    install_command: 'npm install -g coffeelint'
+    include: '**/*.coffee'
+
+  HtmlTidy:
+    enabled: false
+    description: 'Analyzing HTML with tidy'
+    required_executable: 'tidy'
+    flags: ['-errors', '-quiet', '-utf8']
+    include: '**/*.html'
+
+  ImageOptim:
+    enabled: true
+    description: 'Checking for optimizable images'
+    required_executable: 'image_optim'
+    install_command: 'gem install image_optim'
+    include:
+      - '**/*.gif'
+      - '**/*.jpeg'
+      - '**/*.jpg'
+      - '**/*.png'
+      - '**/*.svg'
+
+  JsonSyntax:
+    enabled: true
+    description: 'Validating JSON syntax'
+    required_library: 'json'
+    install_command: 'gem install json'
+    include: '**/*.json'
+
+  MergeConflicts:
+    enabled: true
+    description: 'Checking for merge conflicts'
+    quiet: true
+    required_executable: 'grep'
+    flags: ['-IHn', "^<<<<<<<[ \t]"]
+
+  RailsSchemaUpToDate:
+    enabled: true
+    description: 'Checking if database schema is up to date'
+    include:
+      - 'db/migrate/*.rb'
+      - 'db/schema.rb'
+      - 'db/structure.sql'
+
   RuboCop:
     enabled: true
     problem_on_unmodified_line: ignore
     quiet: true
     on_warn: fail
+
+  ScssLint:
+    enabled: true
+    problem_on_unmodified_line: ignore
+    description: 'Analyzing with scss-lint'
+    required_executable: 'scss-lint'
+    install_command: 'gem install scss-lint'
+    include: '**/*.scss'
+
+  SlimLint:
+    enabled: true
+    description: 'Analyzing with slim-lint'
+    required_executable: 'slim-lint'
+    install_command: 'gem install slim_lint'
+    include: '**/*.slim'
+
 CommitMsg:
   ALL:
     quiet: true
   CapitalizedSubject:
     enabled: false
+    description: 'Checking subject capitalization'
+  EmptyMessage:
+    enabled: true
+    description: 'Checking for empty commit message'
+  TextWidth:
+    enabled: true
+    description: 'Checking text width'
+    max_subject_width: 60
+    max_body_width: 100
