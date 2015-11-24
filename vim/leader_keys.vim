@@ -12,6 +12,9 @@ nnoremap <Leader>} :%s/\([^ ]\)}/\1 }/gc<CR>
 " Remove trailing whitespace
 nnoremap <Leader>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
+" Surround a word with backticks
+map <Leader>` <Esc>ysiw`
+
 " Rename file using RenameFile (leader-n)
 source $HOME/.vim/rename_file.vim
 
