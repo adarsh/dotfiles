@@ -1,6 +1,11 @@
 " CtrlP for fuzzy finding
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map = '<Tab>'
+
+" Use File mode (Not Buffer or Most Recently Used (MRU))
+let g:ctrlp_cmd = 'CtrlP .'
+
+" Set the working directory to the current one
+let g:ctrlp_working_path_mode = 'ca'
 
 " Switch to the file if it's already open
 let g:ctrlp_switch_buffer = 'E'
