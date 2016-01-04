@@ -59,7 +59,12 @@ Bundle 'vim-scripts/greplace.vim'
 " https://github.com/vim-scripts/ReplaceWithSameIndentRegister
 
 " End Vundle Setup
+"
 filetype plugin indent on
+
+" Correct bad indentation automatically when pasting
+" http://vim.wikia.com/wiki/Format_pasted_text_automatically
+nnoremap p p=`]
 
 augroup vimrcEx
   au!
