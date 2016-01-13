@@ -191,6 +191,9 @@ set scrolloff=5
 " Use separate CtrlP file
 source $HOME/.vim/ctrlp.vim
 
+" Syntastic configuration
+let g:syntastic_scss_checkers = ['scss_lint']
+
 " Puts a gray vertical line at 81 chars
 set colorcolumn=81
 highlight ColorColumn ctermbg=7
