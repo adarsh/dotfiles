@@ -15,7 +15,7 @@ nnoremap <Leader>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:reta
 " Surround a word with backticks
 map <Leader>` <Esc>ysiw`
 
-" Rename file using RenameFile (leader-n)
+" Rename file using RenameFile
 source $HOME/.vim/rename_file.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
