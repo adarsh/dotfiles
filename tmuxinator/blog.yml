@@ -1,6 +1,6 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: ap_blog
+name: blog
 root: /Users/adarsh/dev/blog
 
 
