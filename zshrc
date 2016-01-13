@@ -99,15 +99,18 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
 
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
-
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
 # Paths for Postgres.app binaries
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
-unset RBENV_VERSION
+# unset RBENV_VERSION
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
