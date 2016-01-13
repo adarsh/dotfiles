@@ -54,13 +54,16 @@ nnoremap <Leader>gcv :Gcommit -v<CR>
 nnoremap <Leader>ga :Git add .<CR>
 
 " TESTING
-" Run 'rake' from Vim using Turbux/Tslime methods
-nnoremap <Leader>k :call Send_to_Tmux("clear && rake\n")<CR>
+" Run tests from vim using vimux and vim-test
 
-" Override vim-turbux leader keys
-let g:no_turbux_mappings = 1
-map <leader>t <Plug>SendTestToTmux
-map <leader>l <Plug>SendFocusedTestToTmux
+let test#strategy = 'vimux'
+let test#ruby#minitest = 'm'
+nmap <silent> <leader>t :w<CR>:TestNearest<CR>
+nmap <silent> <leader>T :w<CR>:TestFile<CR>
+nmap <silent> <leader>k :w<CR>:TestSuite<CR>
+nmap <silent> <leader>l :w<CR>:TestLast<CR>
+nmap <silent> <leader>g :w<CR>:TestVisit<CR>
+
 
 " MISC
 " Paste in paste mode

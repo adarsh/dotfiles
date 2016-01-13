@@ -1,9 +1,5 @@
 " Don't show the splash screen on startup
-set shortmess+=I
-
-" Vundle plugin manager setup
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+set shortmess=I
 
 " Change the leader key from \ to space
 let mapleader=" "
@@ -24,42 +20,52 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-filetype off      " Required for Vundle setup
+
+" Vundle plugin manager setup
+
+set nocompatible              " be iMproved, required
+filetype off                  " Required for Vundle setup
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle (required!)
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Define bundles
-Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'adarsh/electric_boogaloo.vim'
-Bundle 'bling/vim-airline'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'dockyard/vim-easydir'
-Bundle 'gcmt/wildfire.vim'
-Bundle 'jgdavey/tslime.vim'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'kchmck/vim-coffee-script.git'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'rking/ag.vim.git'
-Bundle 'scrooloose/syntastic'
-Bundle 'sjl/gundo.vim'
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/ReplaceWithRegister'
-Bundle 'vim-scripts/greplace.vim'
+
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'adarsh/electric_boogaloo.vim'
+Plugin 'benmills/vimux'
+Plugin 'bling/vim-airline'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'dietsche/vim-lastplace'
+Plugin 'dockyard/vim-easydir'
+Plugin 'gcmt/wildfire.vim'
+Plugin 'janko-m/vim-test'
+Plugin 'kchmck/vim-coffee-script.git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'rking/ag.vim.git'
+Plugin 'scrooloose/syntastic'
+Plugin 'sjl/gundo.vim'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails.git'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/ReplaceWithRegister'
+Plugin 'vim-scripts/greplace.vim'
 
 " Plugins I am experimenting with
 
 " Queue of things to try:
-" https://github.com/vim-scripts/ReplaceWithSameIndentRegister
 
-" End Vundle Setup
-"
+" End Vundle Setup (following line required)
+call vundle#end()
+
 filetype plugin indent on
 
 " Correct bad indentation automatically when pasting
