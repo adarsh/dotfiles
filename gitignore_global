@@ -16,3 +16,6 @@ config/spring.rb
 
 # Rspec config
 .rspec
+
+# stubs
+bin/stubs
