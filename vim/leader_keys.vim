@@ -47,8 +47,9 @@ nmap <leader>q :q<CR>
 
 " GIT
 " Run a quick 'git diff'
-nnoremap <Leader>d :call Send_to_Tmux("gd\n")<CR>
+nnoremap <Leader>d :call VimuxRunCommand("gd\n")<CR>
 
+" Quickly Commit
 nnoremap <Leader>gc :Gcommit -m ""<LEFT>
 nnoremap <Leader>gcv :Gcommit -v<CR>
 nnoremap <Leader>ga :Git add .<CR>
@@ -58,6 +59,7 @@ nnoremap <Leader>ga :Git add .<CR>
 
 let test#strategy = 'vimux'
 let test#ruby#minitest = 'm'
+let g:VimuxUseNearest = 1
 nmap <silent> <leader>t :w<CR>:TestNearest<CR>
 nmap <silent> <leader>T :w<CR>:TestFile<CR>
 nmap <silent> <leader>k :w<CR>:TestSuite<CR>
