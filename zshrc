@@ -114,3 +114,6 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Jump stuff
+source `jump-bin --zsh-integration`

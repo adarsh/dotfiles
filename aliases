@@ -81,6 +81,9 @@ alias mkdir='mkdir -p'
 alias s='cd ..'
 alias tr='tree -L 2'
 
+# Jump to different marked folders
+# https://github.com/flavio/jump
+alias j='jump'
 
 # Tail logs
 alias tlf='tail -f'
