@@ -38,8 +38,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'adarsh/electric_boogaloo.vim'
 Plugin 'benmills/vimux'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'dockyard/vim-easydir'
@@ -54,13 +52,19 @@ Plugin 'sjl/gundo.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-rails.git'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'vim-scripts/greplace.vim'
 
 " Plugins I am experimenting with
+
+" Needs to come AFTER 'tpope/obsession'
+Plugin 'dhruvasagar/vim-prosession'
 
 " Queue of things to try:
 

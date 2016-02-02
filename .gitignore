@@ -1,3 +1,4 @@
 .netrwhist
 project_aliases
 vim/bundle/*
+vim/session/*
