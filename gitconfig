@@ -38,7 +38,7 @@
 
 [core]
   ignorecase = true
-  excludesfile = /Users/adarsh/.gitignore_global
+  excludesfile = ~/.gitignore_global
   whitespace = trailing-space,space-before-tab
 
 [apply]
