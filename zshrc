@@ -116,4 +116,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Jump stuff
-source `jump-bin --zsh-integration`
+if which jump &>/dev/null ; then
+  source `jump-bin --zsh-integration`
+fi
