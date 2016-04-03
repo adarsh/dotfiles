@@ -122,9 +122,6 @@ highlight NonText guibg=#060606
 set number
 set numberwidth=5
 
-" Snippets are activated by Shift+Tab
-let g:snippetsEmu_key = "<S-Tab>"
-
 " Tab completion. Will insert tab at beginning of line, will complete if not
 set wildmode=list:longest,list:full
 set complete=.,w,t

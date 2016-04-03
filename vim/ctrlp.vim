@@ -1,5 +1,5 @@
 " CtrlP for fuzzy finding
-let g:ctrlp_map = '<Tab>'
+let g:ctrlp_map = '<C-p>' " this is the default
 
 " Use File mode (Not Buffer or Most Recently Used (MRU))
 let g:ctrlp_cmd = 'CtrlP .'
