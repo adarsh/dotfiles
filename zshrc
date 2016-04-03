@@ -40,12 +40,6 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-# expand functions in the prompt
-setopt prompt_subst
-
-# prompt
-export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
-
 # keep more history in a .zhistory file
 export HISTSIZE=1000
 export HISTFILE=~/.zhistory
@@ -119,3 +113,13 @@ eval "$(rbenv init -)"
 if which jump &>/dev/null ; then
   source `jump-bin --zsh-integration`
 fi
+
+# enable colored output from ls, etc
+export CLICOLOR=1
+
+# Source everything in the zsh directory
+BASE="$HOME/.zsh"
+
+for file in "$BASE"/*.zsh; do
+  source "$file"
+done
