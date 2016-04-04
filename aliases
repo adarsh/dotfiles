@@ -116,3 +116,6 @@ alias notify='terminal-notifier -message'
 
 # Edit aliases and source them afterward.
 alias aliases='vi ~/.aliases; source ~/.aliases'
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
