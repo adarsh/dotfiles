@@ -2,3 +2,4 @@
 project_aliases
 vim/bundle/*
 vim/session/*
+aliases.local
