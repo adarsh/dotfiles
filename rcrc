@@ -1,3 +1,3 @@
 # Hey rcm: Don't copy things which match these dirs, only symlink them
 SYMLINK_DIRS="bundle session"
-EXCLUDES="README.md rubocop.maybe.yml install.sh"
+EXCLUDES="README.md rubocop.maybe.yml install.sh com.adarsh.cleandownloads.plist"
