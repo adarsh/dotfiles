@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: william
-root: /Users/apandit/dev/william
+name: ns-vm
+root: /home/vagrant/devel/Northstar
 
 
 # Optional tmux socket
@@ -27,22 +27,18 @@ windows:
       layout: 9f82,255x64,0,0{173x64,0,0,4,81x64,174,0,5}
       panes:
         - vim
-        - gcom && gu && bmr
-  - vm:
-      layout: even-horizontal
+        - gcom; gu; b; migrate; rake test
+  - app-1:
+      layout: tiled
       panes:
-        - pauper_start:
-          - ssh vm
-          - cd /home/vagrant/devel
-          - source activate
-          - pauper start
-        - chef_client:
-          - ssh vm
+        - northstar_logs:
           - ssh app-1
-          - sudo chef-client
-  - billing:
-      layout: even-horizontal
-      panes:
-        - pauper_start:
-          - ssh vm
-          - cd /home/vagrant/devel
+          - ns_app_log
+        - northstar_worker_logs:
+          - ssh app-1
+          - ns_workers_log
+        - shell1:
+          - ssh app-1
+          - cd /opt/northstar/current
+        - shell2:
+          - ssh app-1

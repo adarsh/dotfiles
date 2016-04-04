@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: wootric
-root: /Users/adarsh/dev/wootric/Wootric
+name: wm-vm
+root: /home/vagrant/devel/william
 
 
 # Optional tmux socket
@@ -27,6 +27,32 @@ windows:
       layout: 9f82,255x64,0,0{173x64,0,0,4,81x64,174,0,5}
       panes:
         - vim
-        - gcom && gu && bmr
-  - server: foreman start
-  - logs: tail -f log/development.log
+        - gcom; gu; bmr
+  - billing:
+      layout: tiled
+      panes:
+        - william_logs:
+          - ssh billing
+          - wm_app_log
+        - william_worker_logs:
+          - ssh billing
+          - wm_workers_log
+        - shell:
+          - ssh billing
+          - cd /opt/william/current
+        - william_listener_logs:
+          - ssh billing
+          - wm_listener_log
+  - nsq:
+      layout: tiled
+      panes:
+        - nsqd_logs:
+          - ssh billing
+          - nsqd_log
+        - nsqlookupd_logs:
+          - ssh billing
+          - nsqlookupd_log
+        - shell1:
+          - ssh billing
+        - shell2:
+          - ssh billing

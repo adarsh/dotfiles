@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dotcom.yml
 
-name: aiwa
-root: /Users/adarsh/dev/aiwa
+name: sq-vm
+root: /home/vagrant/devel/Squaw
 
 
 # Optional tmux socket
@@ -27,5 +27,18 @@ windows:
       layout: 9f82,255x64,0,0{173x64,0,0,4,81x64,174,0,5}
       panes:
         - vim
-        - gcom && gu
-  - server: middleman
+        - gcom; gu; b; migrate; rake test
+  - app-1:
+      layout: tiled
+      panes:
+        - squaw_logs:
+          - ssh app-1
+          - sq_app_log
+        - squaw_worker_logs:
+          - ssh app-1
+          - sq_workers_log
+        - squaw_listener_logs:
+          - ssh app-1
+          - sq_listener_log
+        - shell2:
+          - ssh app-1
