@@ -1,6 +1,10 @@
 # Vim
 alias v='vim'
 
+#########
+# Rails #
+#########
+
 # Local servers
 alias fs='clear && forego start -p 3000'
 alias rs='rails server'
@@ -19,6 +23,10 @@ alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
 alias be='bundle exec'
 alias bake='bundle exec rake'
 alias bmr='bundle && migrate && time rake'
+
+#######
+# Git #
+#######
 
 # git
 alias g='git'
@@ -61,8 +69,12 @@ function gcam() {
  git commit -am $1 && git push
 }
 
-# middlman
+# middleman
 alias mm='middleman'
+
+#########
+# Shell #
+#########
 
 # Command line utils
 alias -g G='| grep'
@@ -80,6 +92,7 @@ alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias s='cd ..'
 alias tr='tree -L 2'
+alias diff='colordiff'
 
 # Jump to different marked folders
 # https://github.com/flavio/jump
@@ -113,6 +126,10 @@ alias deploy-production='git push production && hk run rake db:migrate -a produc
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
+
+########
+# Meta #
+########
 
 # Edit aliases and source them afterward.
 alias aliases='vi ~/.aliases; source ~/.aliases'
