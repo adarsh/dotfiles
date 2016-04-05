@@ -20,58 +20,15 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+" Use vim-plug for plugin management
+" https://github.com/junegunn/vim-plug
+call plug#begin()
 
-" Vundle plugin manager setup
+" Define packages in a separate file
+source ~/.vim/plugins.vim
 
-set nocompatible              " be iMproved, required
-filetype off                  " Required for Vundle setup
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle (required!)
-Plugin 'VundleVim/Vundle.vim'
-
-" Define bundles
-
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'adarsh/electric_boogaloo.vim'
-Plugin 'benmills/vimux'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'dietsche/vim-lastplace'
-Plugin 'dockyard/vim-easydir'
-Plugin 'gcmt/wildfire.vim'
-Plugin 'janko-m/vim-test'
-Plugin 'kchmck/vim-coffee-script.git'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'rking/ag.vim.git'
-Plugin 'scrooloose/syntastic'
-Plugin 'sjl/gundo.vim'
-Plugin 'slim-template/vim-slim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-obsession'
-Plugin 'tpope/vim-rails.git'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/ReplaceWithRegister'
-Plugin 'vim-scripts/greplace.vim'
-
-" Plugins I am experimenting with
-
-" Needs to come AFTER 'tpope/obsession'
-Plugin 'dhruvasagar/vim-prosession'
-
-" Queue of things to try:
-
-" End Vundle Setup (following line required)
-call vundle#end()
-
-filetype plugin indent on
+" End vim-plug
+call plug#end()
 
 " Correct bad indentation automatically when pasting
 " http://vim.wikia.com/wiki/Format_pasted_text_automatically

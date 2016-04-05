@@ -96,7 +96,7 @@ alias tma='tmux attach -t'
 
 # Homebrew
 alias brew_update_all='brew update && brew upgrade --all && brew cleanup'
-alias vim_update_plugins='vim +PluginUpdate +qall'
+alias vim_update_plugins='vim +PlugUpgrade +PlugUpdate +qall'
 alias good_morning='brew_update_all && vim_update_plugins'
 
 # Misc

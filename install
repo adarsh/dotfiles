@@ -2,4 +2,8 @@
 
 set -e
 
+# Remove everything in there now, using `rcrc` as the rcrc.
+RCRC=rcrc rcdn -v
+
+# Install everything, using `rcrc` as the rcrc.
 RCRC=rcrc rcup -v
