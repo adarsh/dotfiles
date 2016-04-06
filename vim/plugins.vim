@@ -16,7 +16,7 @@ Plug 'sjl/gundo.vim'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-obsession' | Plug 'dhruvasagar/vim-prosession', { 'tag': 'v0.5.5' }
+Plug 'tpope/vim-obsession' | Plug 'dhruvasagar/vim-prosession'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
