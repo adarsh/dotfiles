@@ -163,6 +163,7 @@ highlight LineNr term=underline cterm=bold ctermfg=DarkGray
 " Use 'Rolodex' mode with vsplits, making them all expand
 set winheight=999
 
-" Config for SplitJoin
-let g:splitjoin_ruby_curly_braces = 0
+"" Config for SplitJoin
+" Don't remove curly braces when splitting a hash.
+let g:splitjoin_ruby_curly_braces = 1
 let g:splitjoin_ruby_hanging_args = 0
