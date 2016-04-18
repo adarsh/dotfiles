@@ -37,9 +37,11 @@
   helper = osxkeychain
 
 [core]
+  editor = vim
   ignorecase = true
   excludesfile = ~/.gitignore_global
   whitespace = trailing-space,space-before-tab
+  pager = diff-so-fancy | less -R --tabs=1,5
 
 [apply]
   whitespace = warn

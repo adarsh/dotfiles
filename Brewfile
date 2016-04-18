@@ -7,6 +7,9 @@ brew 'heroku-toolbelt'
 # colorful diffs (alias diff='colordiff -u')
 brew 'colordiff'
 
+# Fancier git diffs
+brew 'diff-so-fancy'
+
 # a better ack/grep
 brew 'the_silver_searcher'
 
