@@ -42,3 +42,4 @@ windows:
           - cd /opt/northstar/current
         - shell2:
           - ssh app-1
+          - ns_workers_log | grep -i nsq
