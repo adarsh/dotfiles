@@ -4,7 +4,10 @@ brew 'qt5'
 # The recommended way to use Heroku
 brew 'heroku-toolbelt'
 
-# colorful diffs (alias diff='colordiff -u')
+# Colorful tailing of logs
+brew 'multitail'
+
+# Colorful diffs (alias diff='colordiff -u')
 brew 'colordiff'
 
 # Fancier git diffs
@@ -13,7 +16,7 @@ brew 'diff-so-fancy'
 # a better ack/grep
 brew 'the_silver_searcher'
 
-# It's vim
+# It's Vim
 brew 'mercurial'
 brew 'vim'
 
