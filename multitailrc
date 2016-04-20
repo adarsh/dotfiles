@@ -1,5 +1,5 @@
 # Use the Ruby Color Scheme
-rscheme:ruby:ruby
+colorscheme:ruby:ruby
 
 # Custom severity tags
 cs_re:white,red,bold:\[ *(ALERT|CRIT|EMERG|FATAL)\]
