@@ -33,13 +33,17 @@ windows:
       panes:
         - northstar_logs:
           - ssh app-1
+          - cd /opt/northstar/current
           - ns_app_log
         - northstar_worker_logs:
           - ssh app-1
+          - cd /opt/northstar/current
           - ns_workers_log
         - shell1:
           - ssh app-1
           - cd /opt/northstar/current
+          - sudo bundle install
         - shell2:
           - ssh app-1
+          - cd /opt/northstar/current
           - ns_workers_log | grep -i nsq
