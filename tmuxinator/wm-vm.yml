@@ -55,4 +55,4 @@ windows:
         - shell1:
           - ssh billing
         - shell2:
-          - ssh billing
+          - watch -n1 curl 'https://billing:1912/stats' -k --cert ~/fastly_cookbooks/fst-nsq/files/default/certs/dev/nsq-client-cert.pem --key  ~/fastly_cookbooks/fst-nsq/files/default/certs/dev/nsq-client-key.pem

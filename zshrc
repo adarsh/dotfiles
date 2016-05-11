@@ -79,7 +79,7 @@ function b {
 
 # Just type `cd <DIRECTORY_UNDER_ONE_OF_THESE_DIRS>` to go there, without
 # the full path. Autocomplete and everything! /ht @gabebw
-cdpath=($HOME $HOME/dev $HOME/dev/fastly $HOME/dev/personal)
+cdpath=($HOME $HOME/dev $HOME/devel $HOME/dev/fastly $HOME/dev/personal)
 
 # You can hit C-X to open your $EDITOR
 # with the command typed in the buffer

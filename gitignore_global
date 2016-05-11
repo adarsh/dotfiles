@@ -19,3 +19,6 @@ config/spring.rb
 
 # stubs
 bin/stubs
+
+# Overcommit (https://github.com/brigade/overcommit)
+.overcommit.yml
