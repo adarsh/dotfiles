@@ -71,7 +71,7 @@ if executable("ag")
 endif
 
 " Color scheme
-colorscheme zellner
+colorscheme fairyfloss
 highlight NonText guibg=#060606
 
 " Numbers
