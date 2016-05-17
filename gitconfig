@@ -36,6 +36,9 @@
 [credential]
   helper = osxkeychain
 
+[diff-so-fancy]
+  markEmptyLines = false
+
 [core]
   editor = vim
   ignorecase = true
