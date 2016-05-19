@@ -71,7 +71,7 @@ if executable("ag")
 endif
 
 " Color scheme
-colorscheme fairyfloss
+colorscheme Tomorrow-Night-Eighties
 highlight NonText guibg=#060606
 
 " Numbers

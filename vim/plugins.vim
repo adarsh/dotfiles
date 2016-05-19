@@ -1,6 +1,7 @@
 " Plugins I am experimenting with:
 
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'adarsh/vim-tomorrow-theme'
 Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dietsche/vim-lastplace'
@@ -14,7 +15,6 @@ Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
 Plug 'sjl/gundo.vim'
 Plug 'slim-template/vim-slim'
-Plug 'taecilla/fairyfloss.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-obsession' | Plug 'dhruvasagar/vim-prosession'

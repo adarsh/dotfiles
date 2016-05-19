@@ -117,6 +117,9 @@ fi
 # enable colored output from ls, etc
 export CLICOLOR=1
 
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
+
 # Source everything in the zsh directory
 BASE="$HOME/.zsh"
 
