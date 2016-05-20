@@ -6,13 +6,13 @@
   <string>com.adarsh.cleandownloads</string>
   <key>ProgramArguments</key>
   <array>
-    <string>mv</string>
-    <string>~/Downloads/*(mw+1) ~/.Trash</string>
+    <string>/Users/adarsh/.bin/clean_downloads</string>
   </array>
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>1</integer>
-  </dict>
+  <key>StartInterval</key>
+  <integer>60</integer>
+  <key>StandardOutPath</key>
+  <string>/tmp/launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/launchd.stderr.log</string>
 </dict>
 </plist>
