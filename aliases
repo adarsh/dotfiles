@@ -116,6 +116,7 @@ alias good_morning='brew_update_all && vim_update_plugins'
 alias -g L='| wc -l'
 alias -g ONE='| awk '{ print \$1}''
 alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
+alias rerun="rerun -c -i 'coverage/*'"
 
 # rsync is better than cp
 alias rsync='rsync -avz --progress --partial'
@@ -126,6 +127,7 @@ alias deploy-production='git push production && hk run rake db:migrate -a produc
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
+
 
 ########
 # Meta #
