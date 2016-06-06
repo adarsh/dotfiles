@@ -12,15 +12,15 @@ setopt auto_cd
 export EDITOR=vim
 export VISUAL=vim
 
-# aliases
+# load aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
-# project aliases
-if [ -e "$HOME/.project_aliases" ]; then
-  source "$HOME/.project_aliases"
-fi
+# load custom executable functions
+for function in ~/.zsh/functions/*; do
+  source $function
+done
 
 # vi mode
 bindkey -v
