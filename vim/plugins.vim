@@ -1,5 +1,4 @@
-" Plugins I am experimenting with:
-
+" The Canon
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'adarsh/vim-tomorrow-theme'
 Plug 'benmills/vimux'
@@ -25,3 +24,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'vim-scripts/greplace.vim'
+
+" Plugins I am experimenting with:
+Plug 'sonjapeterson/1989.vim'
