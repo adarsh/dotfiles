@@ -51,3 +51,6 @@
 
 [commit]
   template = ~/.gitmessage
+
+[diff]
+  compactionHeuristic = true
