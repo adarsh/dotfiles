@@ -167,3 +167,6 @@ set winheight=999
 " Don't remove curly braces when splitting a hash.
 let g:splitjoin_ruby_curly_braces = 1
 let g:splitjoin_ruby_hanging_args = 0
+
+" Don't ask me if I want to load changed files. The answer is always 'Yes'
+set autoread
