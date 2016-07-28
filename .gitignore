@@ -1,5 +1,6 @@
 .netrwhist
+aliases.local
 project_aliases
+vim/autoload/plug.vim*
 vim/bundle/*
 vim/session/*
-aliases.local
