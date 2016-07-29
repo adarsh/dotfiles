@@ -27,7 +27,7 @@ windows:
       layout: 9f82,255x64,0,0{173x64,0,0,4,81x64,174,0,5}
       panes:
         - vim
-        - gcom; gu; b; migrate; rake test
+        - gcom; gu; b; migrate
   - app-1:
       layout: tiled
       panes:
