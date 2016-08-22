@@ -1,6 +1,6 @@
 " FORMATTING
 " Change Ruby 1.8 > 1.9 hash syntax
-nnoremap <Leader>: :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
+nnoremap <Leader>=> :%s/:\([^ ]*\)\(\s*\)=>/\1:/gc<CR>
 
 " Change all double quotes to single
 nnoremap <Leader>" :%s/"/'/gc<CR>
@@ -17,6 +17,12 @@ map <Leader>` <Esc>ysiw`
 
 " Rename file using RenameFile
 source $HOME/.vim/rename_file.vim
+
+" Ruby convert string into symbol
+map <leader>: ds"ea:<Esc>
+
+" Ruby convert symbol into string
+map <leader>' ysaw"hx
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NAVIGATION
