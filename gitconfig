@@ -20,19 +20,19 @@
 [alias]
   a = add
   aa = add --all
-  ap = !clear; add --patch
-  b = !`clear` && branch
+  ap = add --patch
+  b = branch
   br = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
   ca = commit -a
   cb = checkout -b
-  cm = !clear && commit -vm
+  cm = commit -vm
   co = checkout
   cob = checkout -b
   com = checkout master
-  d = !clear && diff
-  dc = !clear && diff --cached
-  dm = !clear && diff origin/master
-  l = !clear && git log
+  d = diff
+  dc = diff --cached
+  dm = diff origin/master
+  l = git log
   p = push
   q = rebase -i origin/master
   rc = rebase --continue
