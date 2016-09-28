@@ -95,3 +95,9 @@ function precmd {
 function preexec {
   clear
 }
+
+#
+# http://zsh.sourceforge.net/Doc/Release/Functions.html
+# function chpwd {
+  # tree -atrAC -L 2
+# }
