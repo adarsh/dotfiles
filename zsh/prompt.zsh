@@ -89,3 +89,9 @@ function precmd {
   vcs_info
   git status 2> /dev/null >! "/tmp/git-status-$$"
 }
+
+# Clear the screen before each command using the preexec hook function.
+# http://zsh.sourceforge.net/Doc/Release/Functions.html
+function preexec {
+  clear
+}
