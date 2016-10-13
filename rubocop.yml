@@ -6,8 +6,8 @@
 # Last updated 9/30/2016
 
 inherit_from:
-  - enabled.yml
-  - disabled.yml
+  - ./enabled.yml
+  - ./disabled.yml
 
 # Common configuration.
 AllCops:
