@@ -170,3 +170,8 @@ let g:splitjoin_ruby_hanging_args = 0
 
 " Don't ask me if I want to load changed files. The answer is always 'Yes'
 set autoread
+
+" Highlight Yanked text (https://github.com/machakann/vim-highlightedyank)
+map y <Plug>(highlightedyank)
+" Highlight for 5 seconds
+let g:highlightedyank_highlight_duration = 5000
