@@ -175,3 +175,6 @@ set autoread
 map y <Plug>(highlightedyank)
 " Highlight for 5 seconds
 let g:highlightedyank_highlight_duration = 5000
+
+" Treat .etl files like .rb
+au BufRead,BufNewFile *.etl setfiletype ruby
