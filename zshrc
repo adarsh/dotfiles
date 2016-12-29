@@ -97,7 +97,7 @@ export PATH="$HOME/.bin:$PATH"
 export PATH=".git/safe/../../bin:$PATH"
 
 # Paths for Postgres.app binaries
-export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # unset RBENV_VERSION
 # load rbenv if available
