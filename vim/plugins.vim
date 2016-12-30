@@ -1,4 +1,5 @@
 " Plugins I am experimenting with:
+Plug 'AndrewRadev/multichange.vim'
 
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'adarsh/vim-tomorrow-theme'
