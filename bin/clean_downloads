@@ -7,4 +7,4 @@ setopt null_glob
 # Move folders and files with an mtime (modification) older than 1 week to the
 # trash folder.
 # http://www.zsh.org/mla/workers/2011/msg01399.html
-find ~/Downloads/* -mtime +5 -exec mv '{}' ~/.Trash \;
+find ~/Downloads/* -atime +5 -exec mv '{}' ~/.Trash \;
