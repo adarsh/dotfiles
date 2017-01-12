@@ -22,3 +22,8 @@ bin/stubs
 
 # Overcommit (https://github.com/brigade/overcommit)
 .overcommit.yml
+
+# Directory-specific zsh configuration
+.envrc
+.aliases.local
+.env.local

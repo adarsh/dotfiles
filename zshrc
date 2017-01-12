@@ -129,3 +129,6 @@ done
 
 # Add zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Load directory-specific shell config (https://direnv.net/)
+eval "$(direnv hook zsh)"
