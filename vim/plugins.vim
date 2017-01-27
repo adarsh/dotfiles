@@ -1,5 +1,6 @@
 " Plugins I am experimenting with:
 Plug 'AndrewRadev/multichange.vim'
+Plug 'christoomey/vim-sort-motion'
 
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'adarsh/vim-tomorrow-theme'
