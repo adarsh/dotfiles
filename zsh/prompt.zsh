@@ -62,19 +62,17 @@ prompt_git_status() {
 
 prompt_git_status_symbol() {
   local letter
-  # http://www.fileformat.info/info/unicode/char/2718/index.htm
-  local x_mark="\u2718"
-  # http://www.fileformat.info/info/unicode/char/2714/index.htm
-  local checkmark="\u2714"
+  local clean="👍"
+  local dirty="🙅"
 
   case $(prompt_git_status) in
-    changed) letter=$(prompt_red $x_mark);;
+    changed) letter=$dirty;;
     staged) letter=$(prompt_yellow "S");;
     untracked) letter=$(prompt_cyan "UT");;
-    unchanged) letter=$(prompt_green $checkmark);;
+    unchanged) letter=$clean;;
   esac
 
-  prompt_spaced "$letter"
+  print "$letter"
 }
 
 #######################
