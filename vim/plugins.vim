@@ -29,3 +29,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'vim-scripts/greplace.vim'
+
+" Local Plugins
+
+source ~/.vim/plugin/squirrel.vim

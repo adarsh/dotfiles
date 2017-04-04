@@ -27,3 +27,6 @@ bin/stubs
 .envrc
 .aliases.local
 .env.local
+
+# Squirrel files (see vim/plugin/squirrel.vim)
+.squirrel
