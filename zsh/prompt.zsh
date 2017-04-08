@@ -55,7 +55,7 @@ prompt_git_status() {
     print "staged"
   elif print "$git_status" | grep -qF "Untracked files"; then
     print "untracked"
-  elif print "$git_status" | grep -qF "working directory clean"; then
+  elif print "$git_status" | grep -qF "working tree clean"; then
     print "unchanged"
   fi
 }
@@ -72,7 +72,7 @@ prompt_git_status_symbol() {
     unchanged) letter=$clean;;
   esac
 
-  print "$letter"
+  print "$letter "
 }
 
 #######################
