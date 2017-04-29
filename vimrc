@@ -178,3 +178,10 @@ let g:highlightedyank_highlight_duration = 5000
 
 " Treat .etl files like .rb
 au BufRead,BufNewFile *.etl setfiletype ruby
+
+" Highlight the current line, only for the buffer with focus
+augroup CursorLine
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+augroup END
