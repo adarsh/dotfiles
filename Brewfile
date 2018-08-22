@@ -16,6 +16,12 @@ brew 'diff-so-fancy'
 # a better ack/grep
 brew 'the_silver_searcher'
 
+# a better ag
+brew 'rg'
+
+# Fuzzy finding
+brew 'fzf'
+
 # It's Vim
 brew 'mercurial'
 brew 'vim'
@@ -30,6 +36,8 @@ brew 'rcm'
 # Use homebrew to install OS X things
 tap 'caskroom/cask'
 brew 'brew-cask'
+
+
 
 # cask 'alfred'
 # cask 'dropbox'
