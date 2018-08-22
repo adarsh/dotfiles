@@ -161,7 +161,7 @@ highlight ColorColumn ctermbg=7
 highlight LineNr term=underline cterm=bold ctermfg=DarkGray
 
 " Use 'Rolodex' mode with vsplits, making them all expand
-set winheight=999
+set winheight=61
 
 "" Config for SplitJoin
 " Don't remove curly braces when splitting a hash.
