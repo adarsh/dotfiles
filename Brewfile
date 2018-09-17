@@ -34,11 +34,8 @@ tap 'thoughtbot/formulae'
 brew 'rcm'
 
 # Use homebrew to install OS X things
-tap 'caskroom/cask'
-brew 'brew-cask'
-
-
-
+# Disable for now
+# tap 'caskroom/cask'
 # cask 'alfred'
 # cask 'dropbox'
 # cask 'google-chrome'

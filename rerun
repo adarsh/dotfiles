@@ -1,0 +1,6 @@
+--no-notify
+--quiet
+--pattern **/*.{rb,js,scss,sass,html,md,xml,xsd}
+--clear
+--ignore '\''coverage/*'\
+--dir app,lib,spec,config
