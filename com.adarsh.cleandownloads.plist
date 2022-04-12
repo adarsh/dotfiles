@@ -4,12 +4,16 @@
 <dict>
   <key>Label</key>
   <string>com.adarsh.cleandownloads</string>
+  <key>UserName</key>
+  <string>adarsh</string>
+  <key>GroupName</key>
+  <string>staff</string>
   <key>ProgramArguments</key>
   <array>
     <string>/Users/adarsh/.bin/clean_downloads</string>
   </array>
   <key>StartInterval</key>
-  <integer>60</integer>
+  <integer>10</integer>
   <key>StandardOutPath</key>
   <string>/tmp/launchd.stdout.log</string>
   <key>StandardErrorPath</key>
