@@ -1,6 +1,9 @@
 # Qt5 for capybara-webkit
 brew 'qt5'
 
+# Gives us gsort and other GNU tools
+brew 'coreutils'
+
 # The recommended way to use Heroku
 brew 'heroku-toolbelt'
 
@@ -32,6 +35,9 @@ brew 'zsh-syntax-highlighting'
 # rcm for managing dotfiles
 tap 'thoughtbot/formulae'
 brew 'rcm'
+
+# Workarounds for accessing the Mac OS X pasteboard in tmux sessions
+brew 'install reattach-to-user-namespace'
 
 # Use homebrew to install OS X things
 # Disable for now
