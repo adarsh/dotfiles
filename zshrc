@@ -143,3 +143,7 @@ export FZF_DEFAULT_OPTS='--color fg:188,bg:233,hl:103,fg+:222,bg+:234,hl+:104
 --bind j:page-up,k:page-down
 --reverse --tac
 '
+export PATH="/usr/local/sbin:$PATH"
+
+# Disable Spring on all Rails apps
+export DISABLE_SPRING=true
