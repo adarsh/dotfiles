@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
 # Don't log output if the glob doesn't match anything
 # http://unix.stackexchange.com/a/26825/62804
@@ -6,5 +6,6 @@ setopt null_glob
 
 # Move folders and files with an mtime (modification) older than 1 week to the
 # trash folder.
+#
 # http://www.zsh.org/mla/workers/2011/msg01399.html
 find ~/Downloads/* -atime +5 -exec mv '{}' ~/.Trash \;
