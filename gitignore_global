@@ -30,3 +30,6 @@ bin/stubs
 
 # Squirrel files (see vim/plugin/squirrel.vim)
 .squirrel
+
+# Obsidian config files
+.obsidian/
