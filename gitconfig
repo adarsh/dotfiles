@@ -28,25 +28,25 @@
   cm = !clear && commit -vm
   co = checkout
   cob = checkout -b
-  com = checkout master
+  com = checkout main
   d = !clear && diff
   dc = !clear && diff --cached
-  dm = !clear && diff origin/master
+  dm = !clear && diff origin/main
   l = !clear && git log
   p = push
-  q = rebase -i origin/master
+  q = rebase -i origin/main
   rc = rebase --continue
   sh = show
 
   unstage = reset HEAD
   wip = commit -m 'fixup! wip [ci skip]' && push
   pr = !git log -n 1 --pretty=format:'%s%n%n%b' | hub pull-request -F -
-  squash = !git rebase -i origin/master
-  up = !git fetch origin && git rebase origin/master
-  ss = diff --shortstat origin/master
+  squash = !git rebase -i origin/main
+  up = !git fetch origin && git rebase origin/main
+  ss = diff --shortstat origin/main
 
   # Merge the branch you are on, push, and copy last branchname to the PasteBoard
-  down = !git checkout master && git merge @{-1} --ff-only && git name-rev --name-only @{-1} | pbcopy && git push
+  down = !git checkout main && git merge @{-1} --ff-only && git name-rev --name-only @{-1} | pbcopy && git push
 
   # Delete a branch both locally and on the server
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
