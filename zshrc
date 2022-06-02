@@ -71,7 +71,7 @@ alias mmv='noglob zmv -W'
 function b {
   if [[ $# == 0 ]]
   then
-    bundle check || bundle install -j8 && bundle --binstubs=./bin/stubs -j8
+    bundle check || bundle install && bundle --binstubs=./bin/stubs
   else
     bundle "$@"
   fi
