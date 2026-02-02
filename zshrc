@@ -99,15 +99,7 @@ export PATH=".git/safe/../../bin:$PATH"
 # Paths for Postgres.app binaries
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
-# unset RBENV_VERSION
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-fi
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # Jump stuff
 if which jump &>/dev/null ; then
