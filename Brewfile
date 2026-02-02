@@ -34,7 +34,7 @@ tap 'thoughtbot/formulae'
 brew 'rcm'
 
 # Workarounds for accessing the Mac OS X pasteboard in tmux sessions
-brew 'install reattach-to-user-namespace'
+brew 'reattach-to-user-namespace'
 
 # Use homebrew to install OS X things
 # Disable for now
