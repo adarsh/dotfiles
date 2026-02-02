@@ -119,12 +119,6 @@ for file in "$BASE"/*.zsh; do
   source "$file"
 done
 
-# Add zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Load directory-specific shell config (https://direnv.net/)
-eval "$(direnv hook zsh)"
-
 # Note that these FZF options are used by fzf.vim automatically! Yay!
 # Use a separate tool to smartly ignore files
 export FZF_DEFAULT_COMMAND='rg --hidden --files --ignore-file ~/.ignore'
@@ -139,3 +133,13 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Disable Spring on all Rails apps
 export DISABLE_SPRING=true
+export PATH=/opt/homebrew/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:.git/safe/../../bin:/Users/adarsh/.bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/texbin:~/bin
+
+# Add zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Load directory-specific shell config (https://direnv.net/)
+eval "$(direnv hook zsh)"
+
+# Created by `pipx` on 2024-10-12 01:10:59
+export PATH="$PATH:/Users/adarsh/.local/bin"
