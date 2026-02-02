@@ -4,9 +4,6 @@ brew 'qt5'
 # Gives us gsort and other GNU tools
 brew 'coreutils'
 
-# The recommended way to use Heroku
-brew 'heroku-toolbelt'
-
 # Colorful tailing of logs
 brew 'multitail'
 
