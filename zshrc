@@ -143,3 +143,6 @@ eval "$(direnv hook zsh)"
 
 # Created by `pipx` on 2024-10-12 01:10:59
 export PATH="$PATH:/Users/adarsh/.local/bin"
+
+# Activate mise en place for Ruby version management
+eval "$(mise activate zsh)"
