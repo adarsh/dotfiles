@@ -36,9 +36,5 @@ brew 'rcm'
 # Workarounds for accessing the Mac OS X pasteboard in tmux sessions
 brew 'reattach-to-user-namespace'
 
-# Use homebrew to install OS X things
-# Disable for now
-# tap 'caskroom/cask'
-# cask 'alfred'
-# cask 'dropbox'
-# cask 'google-chrome'
+# Use mise en place to manage Ruby versions (https://mise.jdx.dev)
+brew install mise
