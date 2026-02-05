@@ -1,0 +1,5 @@
+shell-integration = zsh
+font-family = JetBrains Mono
+theme = Dracula
+mouse-hide-while-typing = true
+scrollback-limit = 1000000
